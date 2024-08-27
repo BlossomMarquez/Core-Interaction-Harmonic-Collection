@@ -4,4 +4,13 @@ body {
 
 .header {
   font-family: 'Univers Bold', sans-serif;
+  font-size: 3em;
+  margin: 0 25em;
+  position: absolute;
+}
+
+.paragraph {
+  font-family: 'Helvetica', sans-serif;
+  padding-top: 2em;
+  margin: 0 25em;
 }
