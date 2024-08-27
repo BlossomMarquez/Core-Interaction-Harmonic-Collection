@@ -1,3 +1,7 @@
 body {
-  font-family: sans-serif;
+  font-family: 'Helvetica', sans-serif;
+}
+
+.header {
+  font-family: 'Univers Bold', sans-serif;
 }
