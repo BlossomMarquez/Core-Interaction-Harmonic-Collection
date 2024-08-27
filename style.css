@@ -1,21 +1,30 @@
 body {
   font-family: 'Helvetica', sans-serif;
-  font-size: 3em;
-}
-
-h1 {
-  font-size: 32px;
+  color: #de1313;
+  background-color: #141414;
 }
 
 .header {
   font-family: 'Univers Bold', sans-serif;
-  font-size: 32px;
-  margin: 0 25rem;
+  font-size: 2.75em;
+  margin-right: 25em;
+  margin-left: 2rem;
 }
 
 .paragraph {
   font-family: 'Helvetica', sans-serif;
-  padding-top: 2em;
-  margin: 0 25rem;
+  margin-right: 75em;
+  margin-left: 2rem;
   line-height: 1.2em;
+  font-size: 0.8em;
+}
+
+img {
+  width: 20%;
+  height: auto;
+}
+
+a, a:hover, a:visited, a:active  {
+  text-decoration: none;
+  color: inherit;
 }
