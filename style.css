@@ -5,11 +5,12 @@ body {
 .header {
   font-family: 'Univers Bold', sans-serif;
   font-size: 3em;
-  margin: 0, 25em;
+  margin: 0 25rem;
 }
 
 .paragraph {
   font-family: 'Helvetica', sans-serif;
   padding-top: 2em;
-  margin: 0, 25em;
+  margin: 0 25rem;
+  line-height: 1.2em;
 }
