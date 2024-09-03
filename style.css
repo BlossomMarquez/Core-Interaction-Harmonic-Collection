@@ -19,7 +19,7 @@ body {
   margin-left: 2rem;
   line-height: 1.2em;
   font-size: 0.8em;
-  width: 200px;
+  width: auto;
 }
 
 nav {
@@ -31,6 +31,9 @@ nav {
   list-style-type: none;
   padding-top: 2em;
   width: 60px;
+}
+
+nav a {
   display: inline;
 }
 
