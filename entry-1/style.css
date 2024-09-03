@@ -8,39 +8,33 @@ body {
     font-family: 'Arial Bold', sans-serif;
     font-size: 1.5em;
     letter-spacing: -5px;
-    margin-right: 25em;
     margin-left: 2rem;
-    width: 200px;
+    width: 0px;
   }
   
   .paragraph {
     font-family: 'Helvetica', sans-serif;
-    margin-right: 75em;
     margin-left: 2rem;
     line-height: 1.2em;
     font-size: 0.8em;
-    width: auto;
+    width: 450px;
   }
   
   nav {
-    font-family: 'Helvetica', sans-serif;
-    margin-right: 75em;
-    margin-left: 2rem;
-    line-height: 1.2em;
-    font-size: 1.2em;
-    padding-top: 2em;
-    width: 60px;
+font-family: 'Helvetica', sans-serif;
+  margin-right: 75em;
+  margin-left: 2rem;
+  line-height: 1.2em;
+  font-size: 1.2em;
+  padding-top: 2em;
+  width: 60px;
   }
   
   nav a {
     display: inline;
   }
 
-li {
-    list-style-type: none;
-}
-
-  img {
+ .draggable img {
     width: 20%;
     height: auto;
   }
@@ -50,3 +44,24 @@ li {
     color: inherit;
   }
   
+/* Style for draggable image script */
+
+.draggable:hover {
+    cursor: move;
+    cursor: -moz-move;
+    cursor: -webkit-move;
+    z-index: 1;
+}
+
+
+.draggable:hover::after {
+   position: absolute;
+    top: 50%;
+    left: 50%;
+    content: "drag me";
+    backdrop-filter: blur(20px);
+    font-family: 'Syne', sans-serif;
+    padding: 1rem;
+    border-radius: 50px;
+    color: white;
+}
