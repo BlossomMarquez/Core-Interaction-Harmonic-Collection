@@ -13,6 +13,15 @@ body {
   margin-left: 2rem;
 }
 
+.flex-container {
+  display: flex;
+  flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items: flex-start;
+align-content: center;
+}
+
 .header {
   font-family: 'Arial Bold', sans-serif;
   font-size: 1.5em;
@@ -20,11 +29,18 @@ body {
   width: 0px;
 }
 
+pre {
+  width: 50%;
+  margin: auto;
+}
+
 .paragraph {
   font-family: 'Helvetica', sans-serif;
   line-height: 1.2em;
   font-size: 0.8em;
   width: 20%;
+  padding-top: 2rem;
+  padding-right: 2rem;
 }
 
 nav {
@@ -37,6 +53,8 @@ width: 20%;
 
 nav a {
   display: inline;
+  width: auto;
+  height: auto;
 }
 
 img {
@@ -45,13 +63,15 @@ img {
   margin: .125rem .125rem;
 }
 
-a, a:hover, a:visited {
-  text-decoration: none;
-  color: inherit;
+a {
+  height: 50px;
+width: 100px;
+margin-top: 6.5rem;
 }
 
-a:visited {
-  color: #eb0c0c;
+a, a:hover, a:visited, a:active {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* Style for draggable image script */
