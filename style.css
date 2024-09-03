@@ -26,18 +26,14 @@ nav {
   margin-left: 2rem;
   line-height: 1.2em;
   font-size: 1.2em;
+  list-style-type: none;
+  padding: 0;
+  width: 60px;
 }
 
 nav a {
   display: inline;
 }
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 60px;
-} 
 
 img {
   width: 20%;
