@@ -10,6 +10,8 @@ body {
   letter-spacing: -5px;
   margin-right: 25em;
   margin-left: 2rem;
+  width: 60px;
+  display: inline;
 }
 
 .paragraph {
@@ -18,6 +20,8 @@ body {
   margin-left: 2rem;
   line-height: 1.2em;
   font-size: 0.8em;
+  width: 60px;
+  display: inline;
 }
 
 nav {
@@ -27,7 +31,7 @@ nav {
   line-height: 1.2em;
   font-size: 1.2em;
   list-style-type: none;
-  padding: 2rem 0;
+  padding-top: 2em;
   width: 60px;
   display: inline;
 }
