@@ -10,7 +10,7 @@ body {
   letter-spacing: -5px;
   margin-right: 25em;
   margin-left: 2rem;
-  width: 60px;
+  width: 200px;
 }
 
 .paragraph {
@@ -19,7 +19,7 @@ body {
   margin-left: 2rem;
   line-height: 1.2em;
   font-size: 0.8em;
-  width: 60px;
+  width: 200px;
 }
 
 nav {
