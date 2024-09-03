@@ -7,8 +7,26 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="header"><h1><a href="index.html">grottesca.</a></h1></div>
-  <div class="paragraph"><p>grottesca is a collection of images, videos, 3d scans, and written observations documenting
+      <!--draggable image script-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      
+      <script>
+      
+      
+       // Add this code if you want to be able to move the elements inside the container only// 
+      
+      
+      $(function () {
+         $(".draggable").draggable({
+           containment: ".parent"
+          });
+      });
+       
+      </script>
+  <div class="header"><h1><a class="draggable" href="index.html">grottesca.</a></h1></div>
+<a class="draggable" href="/index.html">click me for an alternate color pallette, or drag me around who cares anyway</a>
+  <div class="paragraph"><p class="draggable">grottesca is a collection of images, videos, 3d scans, and written observations documenting
     the journey to and from a space, the experience inside this space, and the found objects at or around the space.
     this project is an exploration of the definition of space, space can be defined
     in a multitude of ways. but what makes a space itself? is it the objects that are near it? the journey to and from the space?
@@ -17,7 +35,7 @@
     or is it the harmonic collection of parts combining as a whole to create an
     experience that is in essence an experiental form of gestalt.
     </p></div>
-  <nav>
+  <nav class="draggable">
     <a href="entry-1/index.html" target="_blank">The Living Gallery</a>
     <a href="Entry2" target="_blank">Entry2</a>
     <a href="Entry3" target="_blank">Entry3</a>

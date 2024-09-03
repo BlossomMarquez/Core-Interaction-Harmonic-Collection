@@ -11,12 +11,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     
-    
-    
     <script>
     
     
-     // Add this code if you want to be able to move the elements inside the container only // 
+     // Add this code if you want to be able to move the elements inside the container only// 
     
     
     $(function () {
@@ -25,30 +23,19 @@
         });
     });
      
-     
-    
-    // Add this code if you want to be able to move the elements outside the container //
-    
-    
-     $(function () {
-      $(".draggable").draggable();
-    
-    });
     </script>
-
-  <div class="header"><h1><a href="https://blossommarquez.github.io/harmonic-collection/">grottesca.</a></h1></div>
-  <div class="paragraph"><p>
-    </p></div>
-  <nav>
-    <a href="https://blossommarquez.github.io/harmonic-collection/entry-1/index.html" target="_blank">The Living Gallery</a>
-   <a href="Entry2" target="_blank">Entry2</a>
-    <a href="Entry3" target="_blank">Entry3</a>
-    <a href="Entry4" target="_blank">Entry4</a>
-    <a href="Entry6" target="_blank">Entry6</a>
-    <a href="Entry7" target="_blank">Entry7</a>
-    <a href="Entry8" target="_blank">Entry8</a>
-   <a href="Entry9" target="_blank">Entry9</a>
-  </nav>
-  <img src="images/GRC-1998-C-01111~orig.jpg">
-</body>
+  <div class="header"><h1><a class="draggable" href="index.html">grottesca.</a></h1></div>
+  <a class="draggable" href="/index.html">click me for alternate color pallette, or drag me around who cares anyway</a>
+  <nav class="draggable">
+  <a href="/entry-1/" target="_blank">The Living Gallery</a>
+ <a href="/entry-2" target="_blank">Entry2</a>
+  <a href="Entry3" target="_blank">Entry3</a>
+  <a href="Entry4" target="_blank">Entry4</a>
+  <a href="Entry6" target="_blank">Entry6</a>
+  <a href="Entry7" target="_blank">Entry7</a>
+  <a href="Entry8" target="_blank">Entry8</a>
+ <a href="Entry9" target="_blank">Entry9</a>
+</nav>
+  <img class="draggable" src="/images/GRC-1998-C-01111~orig.jpg" alt="placeholder/testimage">
+  </body>
 </html>

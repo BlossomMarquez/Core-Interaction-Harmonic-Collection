@@ -1,34 +1,38 @@
+html {
+  height: 100%;
+}
+
 body {
   font-family: 'Arial Regular', sans-serif;
   color: #2353ff;
   background-color: #f7f7f7;
+  min-height: 100vh;
+  min-width: 100vh;
+  max-width: 1920px;
+  max-height: 1080px;
+  margin-left: 2rem;
 }
 
 .header {
   font-family: 'Arial Bold', sans-serif;
-  font-size: 2.75em;
+  font-size: 1.5em;
   letter-spacing: -5px;
-  margin-left: 2rem;
   width: 0px;
 }
 
 .paragraph {
   font-family: 'Helvetica', sans-serif;
-  margin-left: 2rem;
   line-height: 1.2em;
   font-size: 0.8em;
-  width: 450px;
+  width: 20%;
 }
 
 nav {
   font-family: 'Helvetica', sans-serif;
-  margin-right: 75em;
-  margin-left: 2rem;
-  line-height: 1.2em;
-  font-size: 1.2em;
-  list-style-type: none;
-  padding-top: 2em;
-  width: 60px;
+line-height: 1.2em;
+font-size: 1.2em;
+padding-top: 2em;
+width: 20%;
 }
 
 nav a {
@@ -37,10 +41,24 @@ nav a {
 
 img {
   width: 20%;
-  height: auto;
+  height: 20%;
+  margin: .125rem .125rem;
 }
 
-a, a:hover, a:visited, a:active  {
+a, a:hover, a:visited {
   text-decoration: none;
   color: inherit;
+}
+
+a:visited {
+  color: #eb0c0c;
+}
+
+/* Style for draggable image script */
+
+.draggable:hover {
+  cursor: move;
+  cursor: -moz-move;
+  cursor: -webkit-move;
+  z-index: 1;
 }
