@@ -3,6 +3,7 @@
             const muteAllButton = document.getElementById('muteAllButton');
             const volumeUpButton = document.getElementById('volumeUpButton');
             const volumeDownButton = document.getElementById('volumeDownButton');
+           
 
             // Function to unmute all videos
             const unmuteAllVideos = () => {
@@ -58,3 +59,5 @@
             const initialVolume = document.querySelector('video')?.volume || 0.5;
             volumeSlider.value = initialVolume;
         });
+
+  

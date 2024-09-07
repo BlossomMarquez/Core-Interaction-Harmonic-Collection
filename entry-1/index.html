@@ -10,10 +10,9 @@
 <!--audio control buttons script-->
 <script src="audio-buttons-script.js"></script>
 
-<!--mute buttons for individual videos-->
-<script src="individual-video-mute.js">
+<!--individual mute/unmute button script-->
+<script src="individual-video-mute.js"></script>
 
-</script>
 
       <!--draggable image script-->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -37,11 +36,20 @@
 <div style="order: 2" id="alternateColor"><div class="alternateStyle"><a class="draggable" href="..">click me for an alternate color pallette, or drag me around who cares anyway</a></div></div>
   <div style="order: 4">
     <div class="buttons">
+      <div class="draggable">
 <button id="muteAllButton" onclick="muteButton" type="button">mute audio</button>
 <button id="unmuteAllButton" onclick="unmuteButton" type="button">unmute audio</button>
 <button id="volumeUpButton" onclick="volumeUpButton" type="button">raise volume</button>
 <button id="volumeDownButton" onclick="volumeDownButton" type="button">lower volume</button>
-<button id="muteVideo" onclick="muteVideo" type="button">mute video 1</button>
+<button onclick="toggleMute('video1')" type="button">mute video1</button>
+<button onclick="toggleMute('video2')" type="button">mute video2</button>
+<button onclick="toggleMute('video3')" type="button">mute video3</button>
+<button onclick="toggleMute('video4')" type="button">mute video4</button>
+<button onclick="toggleMute('video5')" type="button">mute video5</button>
+<button onclick="toggleMute('video6')" type="button">mute video6</button>
+<button onclick="toggleMute('video7')" type="button">mute video7</button>
+<button onclick="toggleMute('video8')" type="button">mute video8</button>
+</div>
 </div>  
 </div>
 <div style="order: 3" id="navigation">
@@ -94,33 +102,32 @@ was a peaceful way to end my journey.</p>
   <img class="draggable" src="../imgs/kk-set.jpg">
   <img class="draggable" src="../imgs/seth-set.jpg">
   <img class="draggable" src="../imgs/courtyard.jpg">
-  <div class="video-container">
-  <video id="myVideo, video1" class="video, draggable" autoplay muted loop>
+  <div id="myVideo">
+  <video id="video1" class="video, draggable" autoplay muted loop>
     <source src="../imgs/broadway-walking.mp4" type="video/mp4">
     </video>
-    <button onclick="toggleMute('video1')">mute/unmute vid 1</button>
-</div>
-    <video id="myVideo" class="video, draggable" autoplay muted loop>
+    <video id="video2" class="video, draggable" autoplay muted loop>
     <source src="../imgs/seth-and-jame-walking.mp4" type="video/mp4">
   </video>
-  <video id="myVideo" class="video, draggable" autoplay muted loop>
+  <video id="video3" class="video, draggable" autoplay muted loop>
     <source src="../imgs/kk-set-1.mp4" type="video/mp4">
     </video>
-    <video id="myVideo" class="video, draggable" autoplay muted loop>
+    <video id="video4" class="video, draggable" autoplay muted loop>
     <source src="../imgs/seth-set-1.mp4" type="video/mp4">
     </video>
-    <video id="myVideo" class="video, draggable" autoplay muted loop>
+    <video id="video5" class="video, draggable" autoplay muted loop>
     <source src="../imgs/jame-set-1.mp4" type="video/mp4">
     </video>
-    <video id="myVideo" class="video, draggable" autoplay muted loop>
+    <video id="video6" class="video, draggable" autoplay muted loop>
     <source src="../imgs/jame-set-2.mp4" type="video/mp4">
     </video>
-    <video id="myVideo" class="video, draggable" autoplay muted loop>
+    <video id="video7" class="video, draggable" autoplay muted loop>
     <source src="../imgs/jame-set-3.mp4" type="video/mp4">
     </video>
-    <video id="myVideo" class="video, draggable" autoplay muted loop>
+    <video id="video8" class="video, draggable" autoplay muted loop>
     <source src="../imgs/jame-set-4.mp4" type="video/mp4">
   </video>
+</div>
 </div>
 </div>
 </div>
