@@ -80,6 +80,11 @@ img:hover {
   height: 30%;
 }
 
+video:hover {
+  width: 30%;
+  height: 30%;
+}
+
 video {
   width: 20%;
   height: 20%;

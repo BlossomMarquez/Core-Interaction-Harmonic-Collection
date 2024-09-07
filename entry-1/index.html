@@ -8,6 +8,23 @@
   </head>
   <body>
   <!DOCTYPE html>
+  <!-- global audio control script-->
+  <script>
+    let vid = document.getElementById("myVideo");
+    
+    function getVolume() { 
+      alert(vid.volume);
+    } 
+      
+    function setHalfVolume() { 
+      vid.volume = 0.2;
+    } 
+      
+    function setFullVolume() { 
+      vid.volume = 1.0;
+    } 
+    </script> 
+
       <!--draggable image script-->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
       <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -28,6 +45,8 @@
       <div class="flex-container">
  <div style="order: 1" id="header"> <div class="header"><h1><a class="draggable" href="..">grottesca.</a></h1></div></div>
 <div style="order: 2" id="alternateColor"><div class="alternateStyle"><a class="draggable" href="..">click me for an alternate color pallette, or drag me around who cares anyway</a></div></div>
+<button onclick="setHalfVolume()" type="button">Set volume to 0.2</button>
+<button onclick="setFullVolume()" type="button">Set volume to 1.0</button>
 <div style="order: 3" id="navigation">
   <nav class="draggable">
     <a href="." target="_blank">The Living Gallery</a>
@@ -78,7 +97,7 @@ was a peaceful way to end my journey.</p>
   <img class="draggable" src="../imgs/kk-set.jpg">
   <img class="draggable" src="../imgs/seth-set.jpg">
   <img class="draggable" src="../imgs/courtyard.jpg">
-  <video class="draggable" autoplay muted loop>
+  <video id="myVideo" class="draggable" autoplay muted loop>
     <source src="../imgs/broadway-walking.mp4" type="video/mp4">
   </video>
 </div>
