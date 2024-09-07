@@ -1,4 +1,4 @@
-    const x = document.getElementsByClassName("myVideo"); 
+    const vid = document.getElementsByClassName("myVideo"); 
     
     var vid = document.getElementById("myVideo");
     
