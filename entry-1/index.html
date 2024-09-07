@@ -10,6 +10,11 @@
 <!--audio control buttons script-->
 <script src="audio-buttons-script.js"></script>
 
+<!--mute buttons for individual videos-->
+<script src="individual-video-mute.js">
+
+</script>
+
       <!--draggable image script-->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
       <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -32,11 +37,12 @@
 <div style="order: 2" id="alternateColor"><div class="alternateStyle"><a class="draggable" href="..">click me for an alternate color pallette, or drag me around who cares anyway</a></div></div>
   <div style="order: 4">
     <div class="buttons">
-<button id="muteButton" onclick="muteButton" type="button">mute audio</button>
-<button id="unmuteButton" onclick="unmuteButton" type="button">unmute audio</button>
+<button id="muteAllButton" onclick="muteButton" type="button">mute audio</button>
+<button id="unmuteAllButton" onclick="unmuteButton" type="button">unmute audio</button>
 <button id="volumeUpButton" onclick="volumeUpButton" type="button">raise volume</button>
 <button id="volumeDownButton" onclick="volumeDownButton" type="button">lower volume</button>
-</div>
+<button id="muteVideo" onclick="muteVideo" type="button">mute video 1</button>
+</div>  
 </div>
 <div style="order: 3" id="navigation">
   <nav class="draggable">
@@ -88,9 +94,12 @@ was a peaceful way to end my journey.</p>
   <img class="draggable" src="../imgs/kk-set.jpg">
   <img class="draggable" src="../imgs/seth-set.jpg">
   <img class="draggable" src="../imgs/courtyard.jpg">
-  <video id="myVideo" class="video, draggable" autoplay muted loop>
+  <div class="video-container">
+  <video id="myVideo, video1" class="video, draggable" autoplay muted loop>
     <source src="../imgs/broadway-walking.mp4" type="video/mp4">
     </video>
+    <button onclick="toggleMute('video1')">mute/unmute vid 1</button>
+</div>
     <video id="myVideo" class="video, draggable" autoplay muted loop>
     <source src="../imgs/seth-and-jame-walking.mp4" type="video/mp4">
   </video>
