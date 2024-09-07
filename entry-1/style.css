@@ -29,8 +29,9 @@ align-content: center;
   width: 0px;
 }
 
-.order {
+.buttons {
   width: 20%;
+  display: block;
 }
 
 pre {

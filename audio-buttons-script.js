@@ -1,4 +1,4 @@
-    let vid = document.getElementById("myVideo");
+    let vid = document.getElementById('myVideo');
     
     function getVolume() { 
       alert(vid.volume);
