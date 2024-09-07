@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const video = document.getElementById('myVideo');
+    const video = document.querySelectorAll('myVideo');
     const muteButton = document.getElementById('muteButton');
     const unmuteButton = document.getElementById('unmuteButton');
     const volumeUpButton = document.getElementById('volumeUpButton');
