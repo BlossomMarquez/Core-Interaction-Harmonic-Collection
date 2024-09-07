@@ -7,28 +7,9 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-  <!-- global audio control script-->
-  <script>
-    
-  let vid = document.getElementById("myVideo");
-    
-    function getVolume() { 
-      alert(vid.volume);
-    } 
-      
-    function setNoVolume() {
-      vid.volume = 0.0;
-    }
+<!--audio control buttons script-->
+<script src="audio-buttons-script.js"></script>
 
-    function setHalfVolume() { 
-      vid.volume = 0.5;
-    } 
-      
-    function setFullVolume() { 
-      vid.volume = 1.0;
-    } 
-  </script>
-  
       <!--draggable image script-->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
       <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -51,10 +32,10 @@
 <div style="order: 2" id="alternateColor"><div class="alternateStyle"><a class="draggable" href="..">click me for an alternate color pallette, or drag me around who cares anyway</a></div></div>
   <div style="order: 4">
     <div class="buttons">
-  <button  class="draggable" onclick="getVolume()" type="button">what is the volume?</button>
-<button onclick="setNoVolume()" type="button">mute audio</button>
-<button onclick="setHalfVolume()" type="button">set volume to 0.2</button>
-<button onclick="setFullVolume()" type="button">set volume to 1.0</button>
+<button id="muteButton" onclick="muteButton" type="button">mute audio</button>
+<button id="unmuteButton" onclick="unmuteButton" type="button">unmute audio</button>
+<button id="volumeUpButton" onclick="volumeUpButton" type="button">raise volume</button>
+<button id="volumeDownButton" onclick="volumeDownButton" type="button">lower volume</button>
 </div>
 </div>
 <div style="order: 3" id="navigation">
@@ -107,8 +88,29 @@ was a peaceful way to end my journey.</p>
   <img class="draggable" src="../imgs/kk-set.jpg">
   <img class="draggable" src="../imgs/seth-set.jpg">
   <img class="draggable" src="../imgs/courtyard.jpg">
-  <video id="myVideo" class="draggable" autoplay muted loop>
+  <video id="myVideo" class="video, draggable" autoplay muted loop>
     <source src="../imgs/broadway-walking.mp4" type="video/mp4">
+    </video>
+    <video id="myVideo" class="video, draggable" autoplay muted loop>
+    <source src="../imgs/seth-and-jame-walking.mp4" type="video/mp4">
+  </video>
+  <video id="myVideo" class="video, draggable" autoplay muted loop>
+    <source src="../imgs/kk-set-1.mp4" type="video/mp4">
+    </video>
+    <video id="myVideo" class="video, draggable" autoplay muted loop>
+    <source src="../imgs/seth-set-1.mp4" type="video/mp4">
+    </video>
+    <video id="myVideo" class="video, draggable" autoplay muted loop>
+    <source src="../imgs/jame-set-1.mp4" type="video/mp4">
+    </video>
+    <video id="myVideo" class="video, draggable" autoplay muted loop>
+    <source src="../imgs/jame-set-2.mp4" type="video/mp4">
+    </video>
+    <video id="myVideo" class="video, draggable" autoplay muted loop>
+    <source src="../imgs/jame-set-3.mp4" type="video/mp4">
+    </video>
+    <video id="myVideo" class="video, draggable" autoplay muted loop>
+    <source src="../imgs/jame-set-4.mp4" type="video/mp4">
   </video>
 </div>
 </div>
