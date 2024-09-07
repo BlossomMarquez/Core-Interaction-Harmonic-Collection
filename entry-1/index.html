@@ -7,23 +7,10 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-  <!DOCTYPE html>
   <!-- global audio control script-->
-  <script>
-    let vid = document.getElementById("myVideo");
-    
-    function getVolume() { 
-      alert(vid.volume);
-    } 
-      
-    function setHalfVolume() { 
-      vid.volume = 0.2;
-    } 
-      
-    function setFullVolume() { 
-      vid.volume = 1.0;
-    } 
-    </script> 
+  <script src="../audio-buttons-script.js"></script>
+  
+  
 
       <!--draggable image script-->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -45,6 +32,8 @@
       <div class="flex-container">
  <div style="order: 1" id="header"> <div class="header"><h1><a class="draggable" href="..">grottesca.</a></h1></div></div>
 <div style="order: 2" id="alternateColor"><div class="alternateStyle"><a class="draggable" href="..">click me for an alternate color pallette, or drag me around who cares anyway</a></div></div>
+<button onclick="getVolume()" type="button">What is the volume?</button>
+<button onclick="setNoVolume()" type="button">Mute audio</button>
 <button onclick="setHalfVolume()" type="button">Set volume to 0.2</button>
 <button onclick="setFullVolume()" type="button">Set volume to 1.0</button>
 <div style="order: 3" id="navigation">
