@@ -1,6 +1,6 @@
-    const element = document.getElementById("myVideo");
+    const x = document.getElementsByClassName("myVideo"); 
     
-    let vid = document.getElementById("myVideo");
+    var vid = document.getElementById("myVideo");
     
     function getVolume() { 
       alert(vid.volume);
