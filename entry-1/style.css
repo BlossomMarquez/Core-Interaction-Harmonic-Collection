@@ -30,8 +30,9 @@ align-content: center;
 }
 
 button {
-  width: 20%;
-  display: inline;
+  width: 60px;
+  height: 50px;
+  display: inline-block;
   color: #2353ff;
   background-color: #f7f7f7;
 }
