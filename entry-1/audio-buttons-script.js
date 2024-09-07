@@ -1,31 +1,39 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const video = document.querySelectorAll('myVideo');
+    const videos = document.querySelectorAll('.myVideo');
     const muteButton = document.getElementById('muteButton');
     const unmuteButton = document.getElementById('unmuteButton');
     const volumeUpButton = document.getElementById('volumeUpButton');
     const volumeDownButton = document.getElementById('volumeDownButton');
 
-    // Function to mute the video
+    // Function to mute all videos
     muteButton.addEventListener('click', () => {
-        video.muted = true;
+        videos.forEach(video => {
+            video.muted = true;
+        });
     });
 
-    // Function to unmute the video
+    // Function to unmute all videos
     unmuteButton.addEventListener('click', () => {
-        video.muted = false;
+        videos.forEach(video => {
+            video.muted = false;
+        });
     });
 
-    // Function to increase volume
+    // Function to increase volume of all videos
     volumeUpButton.addEventListener('click', () => {
-        if (video.volume < 1) {
-            video.volume = Math.min(video.volume + 0.1, 1);
-        }
+        videos.forEach(video => {
+            if (video.volume < 1) {
+                video.volume = Math.min(video.volume + 0.1, 1);
+            }
+        });
     });
 
-    // Function to decrease volume
+    // Function to decrease volume of all videos
     volumeDownButton.addEventListener('click', () => {
-        if (video.volume > 0) {
-            video.volume = Math.max(video.volume - 0.1, 0);
-        }
+        videos.forEach(video => {
+            if (video.volume > 0) {
+                video.volume = Math.max(video.volume - 0.1, 0);
+            }
+        });
     });
 });
