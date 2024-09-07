@@ -1,5 +1,3 @@
-    const vid = document.getElementsByClassName("myVideo"); 
-    
     let vid = document.getElementById("myVideo");
     
     function getVolume() { 
