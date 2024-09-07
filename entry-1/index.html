@@ -8,10 +8,27 @@
   </head>
   <body>
   <!-- global audio control script-->
-  <script src="../audio-buttons-script.js"></script>
-  
-  
+  <script>
+    
+    var vid = document.getElementById("myVideo");
+    
+    function getVolume() { 
+      alert(vid.volume);
+    } 
+      
+    function setNoVolume() {
+      vid.volume = 0.0;
+    }
 
+    function setHalfVolume() { 
+      vid.volume = 0.5;
+    } 
+      
+    function setFullVolume() { 
+      vid.volume = 1.0;
+    } 
+  </script>
+  
       <!--draggable image script-->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
       <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -32,12 +49,12 @@
       <div class="flex-container">
  <div style="order: 1" id="header"> <div class="header"><h1><a class="draggable" href="..">grottesca.</a></h1></div></div>
 <div style="order: 2" id="alternateColor"><div class="alternateStyle"><a class="draggable" href="..">click me for an alternate color pallette, or drag me around who cares anyway</a></div></div>
-<div class="buttons">
-  <div class="draggable">
-  <button onclick="getVolume()" type="button">What is the volume?</button>
-<button onclick="setNoVolume()" type="button">Mute audio</button>
-<button onclick="setHalfVolume()" type="button">Set volume to 0.2</button>
-<button onclick="setFullVolume()" type="button">Set volume to 1.0</button>
+  <div style="order: 4">
+    <div class="buttons">
+  <button  class="draggable" onclick="getVolume()" type="button">what is the volume?</button>
+<button onclick="setNoVolume()" type="button">mute audio</button>
+<button onclick="setHalfVolume()" type="button">set volume to 0.2</button>
+<button onclick="setFullVolume()" type="button">set volume to 1.0</button>
 </div>
 </div>
 <div style="order: 3" id="navigation">
@@ -52,7 +69,7 @@
     <a href="Entry8" target="_blank">Entry8</a>
     <a href="Entry9" target="_blank">Entry9</a>
   </nav>
-<div style="order: 5" id="paragraph">
+<div style="order: 6" id="paragraph">
 <p>On the evening of September 5th I travelled with my friend Jame from Washington Square to
   Bushwick, arriving at the J stop at Gates Ave we walked down and over to our friend Seth's
   apartment. Here we picked up a keyboard and some MIDI cables, all 3 of us then departed from
@@ -74,7 +91,7 @@ took the Q home. On my walk back the night air was cool and the Chanel Beads in 
 was a peaceful way to end my journey.</p>
 </div>
 </div>
-  <div style="order: 4" id="gallery">
+  <div style="order: 5" id="gallery">
     <div class="imageContainer">
  <img class="draggable" src="../imgs/car-crash.jpg">
   <img class="draggable" src="../imgs/j-over-broadway.jpg">

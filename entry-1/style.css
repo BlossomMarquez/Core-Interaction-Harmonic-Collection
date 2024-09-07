@@ -29,9 +29,11 @@ align-content: center;
   width: 0px;
 }
 
-.buttons {
+button {
   width: 20%;
-  display: block;
+  display: inline;
+  color: #2353ff;
+  background-color: #f7f7f7;
 }
 
 pre {
