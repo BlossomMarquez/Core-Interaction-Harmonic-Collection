@@ -105,7 +105,7 @@ a, a:hover, a:visited, a:active {
   color: inherit;
 }
 
-/* Style for draggable image script */
+/* Style for draggable image script, this effects the mouse pointer*/
 
 .draggable:hover {
   cursor: move;
