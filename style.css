@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  font-family: 'Arial Regular', sans-serif;
+  font-family: "AkzidenzGroteskRegular";
   color: #2353ff;
   background-color: #f7f7f7;
   min-height: 100vh;
@@ -23,7 +23,7 @@ align-content: center;
 }
 
 .header {
-  font-family: 'Arial Bold', sans-serif;
+  font-family: "AkzidenzGroteskBold";
   font-size: 1.5em;
   letter-spacing: -5px;
   width: 0px;
@@ -32,10 +32,12 @@ align-content: center;
 pre {
   width: 50%;
   margin: auto;
+  font-family: "IBMPlexMono";
+  font-size: 0.9rem;
 }
 
 .paragraph {
-  font-family: 'Helvetica', sans-serif;
+  font-family: "IBMPlexSansText";
   line-height: 1.2em;
   font-size: 0.8em;
   width: 20%;
@@ -44,7 +46,7 @@ pre {
 }
 
 nav {
-  font-family: 'Helvetica', sans-serif;
+  font-family: "IBMPlexSansText";
 line-height: 1.2em;
 font-size: 1.2em;
 padding-top: 2em;
@@ -81,4 +83,26 @@ a, a:hover, a:visited, a:active {
   cursor: -moz-move;
   cursor: -webkit-move;
   z-index: 1;
+}
+
+/* Fonts */
+
+@font-face {
+  font-family: "AkzidenzGroteskRegular";
+  src: url(/fonts/AkzidenzGroteskBE-Regular.otf);
+}
+
+@font-face {
+  font-family: "AkzidenzGroteskBold";
+  src: url(/fonts/AkzidenzGroteskBE-Bold.otf);
+}
+
+@font-face {
+  font-family: "IBMPlexSansText";
+  src: url(/fonts/IBMPlexSans-Text.otf);
+}
+
+@font-face {
+  font-family: "IBMPlexMono";
+  src: url(/fonts/IBMPlexMono-Regular.otf);
 }
