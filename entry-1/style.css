@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  font-family: 'IBM Plex Sans Text';
+  font-family: "IBMPlexSansText";
   color: #2353ff;
   background-color: #f7f7f7;
   min-height: 100vh;
@@ -23,7 +23,7 @@ align-content: center;
 }
 
 .header {
-  font-family: 'AkzidenzGrotesk Bold', sans-serif;
+  font-family: "AkzidenzGroteskBold";
   font-size: 1.5em;
   letter-spacing: -5px;
   width: 0px;
@@ -35,6 +35,7 @@ button {
   display: inline-block;
   color: #2353ff;
   background-color: #f7f7f7;
+  font-family: "AkzidenzGroteskRegular";
 }
 
 pre {
@@ -43,7 +44,7 @@ pre {
 }
 
 .paragraph {
-  font-family: 'IBM Plex Sans Text';
+  font-family: "IBMPlexSansText";
   line-height: 1.2em;
   font-size: 0.8em;
   width: 20%;
@@ -117,21 +118,16 @@ a, a:hover, a:visited, a:active {
 /* Fonts */
 
 @font-face {
-  font-family: 'Univers Bold', sans-serif;
-  src: url(../UniversLTStd-Bold.otf);
+  font-family: "AkzidenzGroteskRegular";
+  src: url(/workspaces/harmonic-collection/fonts/AkzidenzGroteskBE-Regular.otf);
 }
 
 @font-face {
-  font-family: 'Akzidenz Grotesk Regular', sans-serif;
-  src: url(../AkzidenzGroteskBE-Regular.otf);
+  font-family: "AkzidenzGroteskBold";
+  src: url(./AkzidenzGroteskBE-Bold.otf);
 }
 
 @font-face {
-  font-family: 'Akzidenz Grotesk Bold', sans-serif;
-  src: url(../AkzidenzGroteskBE-Bold.otf);
-}
-
-@font-face {
-  font-family: 'IBM Plex Sans Text', sans-serif;
-  src: url(../IBMPlexSans-Text.otf);
+  font-family: "IBMPlexSansText";
+  src: url(./IBMPlexSans-Text.otf);
 }
