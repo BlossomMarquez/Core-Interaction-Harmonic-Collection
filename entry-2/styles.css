@@ -4,8 +4,8 @@ html {
   
   body {
     font-family: "IBMPlexSansText";
-    color: #2353ff;
-    background-color: #f7f7f7;
+    color: #51f36c;
+    background-color: #f470c8;
     min-height: 100vh;
     min-width: 100vh;
     max-width: 1920px;
@@ -33,15 +33,14 @@ html {
     width: 60px;
     height: 50px;
     display: inline-block;
-    color: #2353ff;
-    background-color: #f7f7f7;
+    color: #f470c8;
+    background-color: #51f36c;
     font-family: "AkzidenzGroteskRegular";
   }
   
   pre {
     width: 100%;
     overflow: auto;
-    margin: auto;
     font-family: "IBMPlexMono";
     font-size: 0.5rem;
   }
@@ -57,7 +56,7 @@ html {
   
   nav {
     font-family: "IBMPlexSansText";
-  line-height: 1.2em;
+  line-height: 1.5em;
   font-size: 1.2em;
   width: 20%;
   height: 20%;
@@ -133,4 +132,9 @@ html {
   @font-face {
     font-family: "IBMPlexSansText";
     src: url(../fonts/IBMPlexSans-Text.otf);
+  }
+
+  @font-face {
+    font-family: "IBMPlexMono";
+    src: url(../fonts/IBMPlexMono-Regular.otf);
   }
