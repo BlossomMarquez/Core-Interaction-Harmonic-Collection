@@ -7,6 +7,151 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+<!--audio control buttons script-->
+<script src="audio-buttons-script.js"></script>
 
-  </body>
-  </html>
+<!--individual mute/unmute button script-->
+<script src="individual-video-mute.js"></script>
+
+
+      <!--draggable image script-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      
+      <script>
+      
+      
+       // This code is for moving around elements within side a set box, because of the flexbox container this is need for functionality but doesn't affect the actual bounding box// 
+      
+      
+      $(function () {
+         $(".draggable").draggable({
+           containment: ".parent"
+          });
+      });
+       
+      </script>
+      <div class="flex-container">
+        <!--Begin Header-->
+ <div style="order: 1" id="header"> <div class="header"><h1><a class="draggable" href="..">grottesca.</a></h1></div></div>
+<div style="order: 2;" id="alternateColor"><div class="alternateStyle">
+  <a class="draggable" href="..">click me for an alternate color pallette, or drag me around who cares anyway</a>
+    </div>
+  </div>
+<!--End Header-->
+
+  <!--Begin Mute and Unmute Buttons, Volume Control-->
+  <div style="order: 4;">
+    <div class="buttons">
+      <div class="draggable">
+<button id="muteAllButton" onclick="muteButton" type="button">mute audio</button>
+<button id="unmuteAllButton" onclick="unmuteButton" type="button">unmute audio</button>
+<button id="volumeUpButton" onclick="volumeUpButton" type="button">raise volume</button>
+<button id="volumeDownButton" onclick="volumeDownButton" type="button">lower volume</button>
+<button onclick="toggleMute('video1')" type="button">mute video1</button>
+<button onclick="toggleMute('video2')" type="button">mute video2</button>
+<button onclick="toggleMute('video3')" type="button">mute video3</button>
+<button onclick="toggleMute('video4')" type="button">mute video4</button>
+<button onclick="toggleMute('video5')" type="button">mute video5</button>
+<button onclick="toggleMute('video6')" type="button">mute video6</button>
+<button onclick="toggleMute('video7')" type="button">mute video7</button>
+<button onclick="toggleMute('video8')" type="button">mute video8</button>
+</div>
+</div>  
+</div>
+<!--End Mute and Unmute Buttons, Volume Control-->
+
+<!--Begin Nav Bar-->
+<div style="order: 3;" id="navigation">
+  <nav class="draggable">
+    <a href="." target="_self">The Living Gallery</a>
+    <a href="Entry2" target="_blank">Entry2</a>
+    <a href="Entry3" target="_blank">Entry3</a>
+    <a href="Entry4" target="_blank">Entry4</a>
+    <a href="Entry5" target="_blank">Entry5</a>
+    <a href="Entry6" target="_blank">Entry6</a>
+    <a href="Entry7" target="_blank">Entry7</a>
+    <a href="Entry8" target="_blank">Entry8</a>
+    <a href="Entry9" target="_blank">Entry9</a>
+  </nav>
+<!--End Nav Bar-->
+
+  <!--Begin Main Paragraph-->
+<div style="order: 6;" id="paragraph" >
+<p class="draggable">
+  On the evening of September 5th I travelled with my friend Jame from Washington Square to
+  Bushwick, arriving at the J stop at Gates Ave we walked down and over to our friend Seth's
+  apartment. Here we picked up a keyboard and some MIDI cables, all 3 of us then departed from
+  Seth's apartment and walked to The Living Gallery on Broadway and Dodworth. There we met
+  our other friend KK, once we had entered the space set-up began for the show that evening in
+  which Seth, Jame, and KK all played. The music was transfixing, ambient and ethereal, it was as
+  if electronic angels had been sent down to play their harmonies for us. After sharing a cigarette,
+  Jame, Seth, and I walked over to a nearby deli. Seth got a hamburger, I got a bacon, egg, and cheese,
+  and a Diet Pepsi, Jame got a pineapple Truly. We walked back to the venue, the wholetime discussing
+performance art and what it can be versus what it oftentimes is. In particular we talked about cutspace's 
+recent show at Market Hotel and how opening a techno and hardcore show with performance art was
+an odd choice. Later I found myself in the courtyard behind the venue discussing emo violence bands
+with Seth and a couple other people. We talked at length about Pg. 99, Daitro, city of caterpillars, Orchid,
+it was nice to be around people who appreciated some of the nastier music out there. We went back in for
+Jame's set as she was closing out the night. It was truly a dream, the soft and dim blue light extruding from
+the corner being the only illumination in the room besides Jame's hardware. Once she had finished we 
+tore down all the equipment and tables and went our seperate ways. I took the J back to Canal St and then
+took the Q home. On my walk back the night air was cool and the Chanel Beads in my headphones
+was a peaceful way to end my journey.</p>
+</div>
+</div>
+<!--End Main Paragraph-->
+
+<!--Begin Image Gallery-->
+  <div style="order: 5" id="gallery">
+    <div class="imageContainer">
+ <img class="draggable" src="../imgs/car-crash.jpg">
+  <img class="draggable" src="../imgs/j-over-broadway.jpg">
+  <img class="draggable" src="../imgs/deli-corner.jpg">
+  <img class="draggable" src="../imgs/column-on-broadway1.jpg">
+  <img class="draggable" src="../imgs/column-on-broadway2.jpg">
+  <img class="draggable" src="../imgs/broadway-angular.jpg">
+  <img class="draggable" src="../imgs/broadway-blur.jpg">
+  <img class="draggable" src="../imgs/for-rent.jpg">
+  <img class="draggable" src="../imgs/jame.jpg">
+  <img class="draggable" src="../imgs/jame-seth-kk.jpg">
+  <img class="draggable" src="../imgs/venue-lights.jpg">
+  <img class="draggable" src="../imgs/kk-set.jpg">
+  <img class="draggable" src="../imgs/seth-set.jpg">
+  <img class="draggable" src="../imgs/courtyard.jpg">
+<!--End Image Gallery-->
+
+  <!--Begin Video Gallery-->
+  <div id="myVideo">
+  <video id="video1" class="video, draggable"  autoplay muted loop>
+    <source src="../imgs/broadway-walking.mp4" type="video/mp4">
+    </video>
+    <video id="video2" class="video, draggable"  autoplay muted loop>
+    <source src="../imgs/seth-and-jame-walking.mp4" type="video/mp4">
+  </video>
+  <video id="video3" class="video, draggable"  autoplay muted loop>
+    <source src="../imgs/kk-set-1.mp4" type="video/mp4">
+    </video>
+    <video id="video4" class="video, draggable"  autoplay muted loop>
+    <source src="../imgs/seth-set-1.mp4" type="video/mp4">
+    </video>
+    <video id="video5" class="video, draggable"  autoplay muted loop>
+    <source src="../imgs/jame-set-1.mp4" type="video/mp4">
+    </video>
+    <video id="video6" class="video, draggable"  autoplay muted loop>
+    <source src="../imgs/jame-set-2.mp4" type="video/mp4">
+    </video>
+    <video id="video7" class="video, draggable"  autoplay muted loop>
+    <source src="../imgs/jame-set-3.mp4" type="video/mp4">
+    </video>
+    <video id="video8" class="video, draggable"  autoplay muted loop>
+    <source src="../imgs/jame-set-4.mp4" type="video/mp4">
+  </video>
+    </div>
+    <!--End Video Gallery-->
+    
+</div>
+</div>
+</div>
+</body>
+</html>
