@@ -4,8 +4,8 @@ html {
 
 body {
   font-family: "IBMPlexSansText";
-  color: #2353ff;
-  background-color: #f7f7f7;
+  color: #0427a6;
+  background-color: #a7a7a7;
   min-height: 100vh;
   min-width: 100vh;
   max-width: 1920px;
@@ -26,15 +26,15 @@ align-content: center;
   font-family: "AkzidenzGroteskBold";
   font-size: 1.5em;
   letter-spacing: -5px;
-  width: 0px;
+  width: 20%;
 }
 
 button {
   width: 60px;
   height: 50px;
   display: inline-block;
-  color: #2353ff;
-  background-color: #f7f7f7;
+  color: #0427a6;
+  background-color: #a7a7a7;
   font-family: "AkzidenzGroteskRegular";
 }
 
@@ -43,21 +43,17 @@ pre {
   margin: auto;
 }
 
-.paragraph {
-  font-family: "IBMPlexSansText";
-  line-height: 1.2em;
-  font-size: 0.8em;
-  width: 20%;
-  padding-top: 2rem;
-  padding-right: 2rem;
-}
-
 nav {
   font-family: "IBMPlexSansText";
 line-height: 1.2em;
 font-size: 1.2em;
-width: 20%;
+width: 50%;
 height: 20%;
+margin-bottom: 2rem;
+}
+
+.navigation {
+  width: 20%;
 }
 
 nav a {
@@ -65,12 +61,19 @@ nav a {
   height: 20%;
 }
 
-p {
-  max-width: 50%;
-  max-height: 50%;
+.paragraph {
+  font-family: "IBMPlexSansText";
+  line-height: 1.2em;
+  font-size: 1rem;
   width: 50%;
-  height: 20%;
+  margin-right: 20rem;
+}
+
+p {
+  max-width: 100%;
+  max-height: 100%;
 line-height: 1.2rem;
+margin-top: 0;
 }
 
 img {

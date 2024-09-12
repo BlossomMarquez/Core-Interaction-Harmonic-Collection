@@ -41,6 +41,7 @@ html {
   pre {
     width: 100%;
     overflow: auto;
+    margin-top: -9rem;
     font-family: "IBMPlexMono";
     font-size: 0.5rem;
   }
@@ -56,12 +57,16 @@ html {
   
   nav {
     font-family: "IBMPlexSansText";
-  line-height: 1.5em;
+  line-height: 1.2em;
   font-size: 1.2em;
   width: 20%;
   height: 20%;
   }
   
+.navigation {
+  width: 20%;
+}
+
   nav a {
     width: 20%;
     height: 20%;
