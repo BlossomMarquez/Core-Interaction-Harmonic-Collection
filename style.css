@@ -89,20 +89,20 @@ a, a:hover, a:visited, a:active {
 
 @font-face {
   font-family: "AkzidenzGroteskRegular";
-  src: url(/fonts/AkzidenzGroteskBE-Regular.otf);
+  src: url(./fonts/AkzidenzGroteskBE-Regular.otf);
 }
 
 @font-face {
   font-family: "AkzidenzGroteskBold";
-  src: url(/fonts/AkzidenzGroteskBE-Bold.otf);
+  src: url(./fonts/AkzidenzGroteskBE-Bold.otf);
 }
 
 @font-face {
   font-family: "IBMPlexSansText";
-  src: url(/fonts/IBMPlexSans-Text.otf);
+  src: url(./fonts/IBMPlexSans-Text.otf);
 }
 
 @font-face {
   font-family: "IBMPlexMono";
-  src: url(/fonts/IBMPlexMono-Regular.otf);
+  src: url(./fonts/IBMPlexMono-Regular.otf);
 }
