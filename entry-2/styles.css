@@ -3,7 +3,7 @@ html {
   }
   
   body {
-    font-family: "AkzidenzGroteskRegular";
+    font-family: "IBMPlexSansText";
     color: #2353ff;
     background-color: #f7f7f7;
     min-height: 100vh;
@@ -29,11 +29,21 @@ html {
     width: 0px;
   }
   
+  button {
+    width: 60px;
+    height: 50px;
+    display: inline-block;
+    color: #2353ff;
+    background-color: #f7f7f7;
+    font-family: "AkzidenzGroteskRegular";
+  }
+  
   pre {
-    width: 50%;
+    width: 100%;
+    overflow: auto;
     margin: auto;
     font-family: "IBMPlexMono";
-    font-size: 0.9rem;
+    font-size: 0.5rem;
   }
   
   .paragraph {
@@ -49,26 +59,49 @@ html {
     font-family: "IBMPlexSansText";
   line-height: 1.2em;
   font-size: 1.2em;
-  padding-top: 2em;
   width: 20%;
+  height: 20%;
   }
   
   nav a {
-    display: inline;
-    width: auto;
-    height: auto;
+    width: 20%;
+    height: 20%;
+  }
+  
+  p {
+    max-width: 50%;
+    max-height: 50%;
+    width: 50%;
+    height: 20%;
+  line-height: 1.2rem;
   }
   
   img {
-    width: 20%;
-    height: 20%;
+    width: 10%;
+    height: 10%;
     margin: .125rem .125rem;
+    flex-grow: 0;
   }
   
-  a {
-    height: 50px;
-  width: 100px;
-  margin-top: 6.5rem;
+  img:hover {
+    width: 25%;
+    height: 25%;
+  }
+  
+  video:hover {
+    width: 30%;
+    height: 30%;
+  }
+  
+  video {
+    width: 20%;
+    height: 20%;
+  }
+  
+  .alternateStyle {
+    margin-right: 57rem;
+    margin-bottom: 0.5rem;
+    width: 20%;
   }
   
   a, a:hover, a:visited, a:active {
@@ -76,7 +109,7 @@ html {
     color: inherit;
   }
   
-  /* Style for draggable image script */
+  /* Style for draggable image script, this effects the mouse pointer*/
   
   .draggable:hover {
     cursor: move;
@@ -100,9 +133,4 @@ html {
   @font-face {
     font-family: "IBMPlexSansText";
     src: url(../fonts/IBMPlexSans-Text.otf);
-  }
-  
-  @font-face {
-    font-family: "IBMPlexMono";
-    src: url(../fonts/IBMPlexMono-Regular.otf);
   }
