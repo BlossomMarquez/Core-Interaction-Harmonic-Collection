@@ -70,8 +70,12 @@ p {
   max-height: 100%;
 }
 
+.bottom {
+  padding-bottom: 30rem;
+}
+
 span {
-  opacity: 0.05;
+  opacity: 0.01;
 }
 
 .scroll-container {
@@ -124,6 +128,10 @@ a, a:hover, a:visited, a:active {
   color: inherit;
 }
 
+.footer {
+  float: left;
+ font-size: clamp(20px, 5vw, 70px);
+}
 
 /* Style for draggable image script, this effects the mouse pointer*/
 

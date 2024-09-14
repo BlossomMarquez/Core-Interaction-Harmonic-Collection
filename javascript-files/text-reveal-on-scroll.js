@@ -13,7 +13,7 @@ paragraphs.forEach(paragraph =>{
 spans = [...document.querySelectorAll('span')];
 
 function revealSpans () {
-    for(let i = 0; spans.length; i++){
+    for(let i = 0; i < spans.length; i++){
         if(spans[i].parentElement.getBoundingClientRect().top < window.innerHeight / 2){
             let {left, top} = spans[i].getBoundingClientRect();
             top = top - (window.innerHeight * 0.4)

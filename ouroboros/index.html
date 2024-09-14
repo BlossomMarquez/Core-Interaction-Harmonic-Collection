@@ -7,35 +7,6 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-<!--Begin Scripts-->
-
-<!--audio control buttons script-->
-<script src="../javascript-files/audio-buttons-script.js"></script>
-
-<!--individual mute/unmute button script-->
-<script src="../javascript-files/individual-video-mute.js"></script>
-
-<!--Text reveal on scroll script-->
-<script src="../javascript-files/text-reveal-on-scroll.js"></script>
-
-      <!--draggable image script-->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-      
-      <script>
-      
-      
-       // This code is for moving around elements within side a set box, because of the flexbox container this is need for functionality but doesn't affect the actual bounding box// 
-      
-      
-      $(function () {
-         $(".draggable").draggable({
-           containment: ".parent"
-          });
-      });
-       
-      </script>
-<!--End Scripts-->
     
         <!--Begin Header-->
   <div class="header"><h1>
@@ -189,7 +160,7 @@
   7:30am, shower, 8am
 </p>
 
-<p>
+<p class="bottom">
   8am, walk down newkirk, 5 or 6 blocks, to newkirk plaza, q to 14th/union square,
   union square to 5th and 13th, into the uc or parsons, up to the 10th floor,
   typography with geoff, interaction with jack, recitation with omaid at the uc, typography 
@@ -202,6 +173,43 @@
   7:30am, shower, 8am
 </p>
 <!--End Main Paragraph-->
+
+<!--Begin Footer-->
+<div class="footer">
+<a href="https://www.studioapriori.xyz" target="_blank">studioapriori</a>
+  <p class="bottom">Site Design by Blossom Marquez</p>
+</div>
+<!--End Footer-->
+
+<!--Begin Scripts-->
+
+<!--audio control buttons script-->
+<script src="../javascript-files/audio-buttons-script.js"></script>
+
+<!--individual mute/unmute button script-->
+<script src="../javascript-files/individual-video-mute.js"></script>
+
+<!--Text reveal on scroll script-->
+<script src="../javascript-files/text-reveal-on-scroll.js"></script>
+
+      <!--draggable image script-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      
+      <script>
+      
+      
+       // This code is for moving around elements within side a set box, because of the flexbox container this is need for functionality but doesn't affect the actual bounding box// 
+      
+      
+      $(function () {
+         $(".draggable").draggable({
+           containment: ".parent"
+          });
+      });
+       
+      </script>
+<!--End Scripts-->
 
 </body>
 </html>
