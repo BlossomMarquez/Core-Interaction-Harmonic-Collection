@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Living Gallery - grottesca.</title>
+    <title>the living gallery - grottesca.</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
@@ -31,60 +31,32 @@
       });
        
       </script>
-      <div class="flex-container">
+   <!-- <div class="flex-container"> -->
         <!--Begin Header-->
-        <div style="order: 1">
- <div id="header"> <div class="header"><h1><a class="draggable" href="..">grottesca.</a>
+<div class="header">
+  <h1>
+  <a class="draggable" href=".." target="_blank">grottesca.</a>
 </h1>
+  <a class="draggable" href=".">click me for an alternate color pallette, or drag me around who cares anyway</a>
 </div>
-</div>
-<div id="alternateColor">
-  <div class="alternateStyle">
-  <a class="draggable" href="..">click me for an alternate color pallette, or drag me around who cares anyway</a>
-</div>
-    </div>
-  </div>
 <!--End Header-->
 
-  <!--Begin Mute and Unmute Buttons, Volume Control-->
-  <div style="order: 5;">
-    <div class="buttons">
-      <div class="draggable">
-<button id="muteAllButton" onclick="muteButton" type="button">mute audio</button>
-<button id="unmuteAllButton" onclick="unmuteButton" type="button">unmute audio</button>
-<button id="volumeUpButton" onclick="volumeUpButton" type="button">raise volume</button>
-<button id="volumeDownButton" onclick="volumeDownButton" type="button">lower volume</button>
-<button onclick="toggleMute('video1')" type="button">mute video1</button>
-<button onclick="toggleMute('video2')" type="button">mute video2</button>
-<button onclick="toggleMute('video3')" type="button">mute video3</button>
-<button onclick="toggleMute('video4')" type="button">mute video4</button>
-<button onclick="toggleMute('video5')" type="button">mute video5</button>
-<button onclick="toggleMute('video6')" type="button">mute video6</button>
-<button onclick="toggleMute('video7')" type="button">mute video7</button>
-<button onclick="toggleMute('video8')" type="button">mute video8</button>
-</div>
-</div>  
-</div>
-<!--End Mute and Unmute Buttons, Volume Control-->
-
 <!--Begin Nav Bar-->
-<div style="order: 2;" class="navigation">
-  <nav class="draggable">
-    <a href="." target="_self">The Living Gallery</a> |
-    <a href="../entry-2" target="_blank">I-9 Appointment</a> |
-    <a href="Entry3" target="_blank">Entry3</a> |
-    <a href="Entry4" target="_blank">Entry4</a> |
-    <a href="Entry5" target="_blank">Entry5</a> |
-    <a href="Entry6" target="_blank">Entry6</a> |
-    <a href="Entry7" target="_blank">Entry7</a> |
-    <a href="Entry8" target="_blank">Entry8</a> |
-    <a href="Entry9" target="_blank">Entry9</a>
-  </nav>
-</div>
+<nav class="draggable">
+  <a href="." target="_self">the living gallery</a> |
+  <a href="../entry-2" target="_blank">ouroboros</a> |
+  <a href="Entry3" target="_blank">entry3</a> |
+  <a href="Entry4" target="_blank">entry4</a> |
+  <a href="Entry5" target="_blank">entry5</a> |
+  <a href="Entry6" target="_blank">entry6</a> |
+  <a href="Entry7" target="_blank">entry7</a> |
+  <a href="Entry8" target="_blank">entry8</a> |
+  <a href="Entry9" target="_blank">entry9</a>
+</nav>
 <!--End Nav Bar-->
 
   <!--Begin Main Paragraph-->
-<div style="order: 3;" class="paragraph" >
+<div class="paragraph" >
 <p class="draggable">
   On the evening of September 5th I travelled with my friend Jame from Washington Square to
   Bushwick, arriving at the J stop at Gates Ave we walked down and over to our friend Seth's
@@ -106,11 +78,11 @@ tore down all the equipment and tables and went our seperate ways. I took the J 
 took the Q home. On my walk back the night air was cool and the Chanel Beads in my headphones
 was a peaceful way to end my journey.</p>
 </div>
-</div>
 <!--End Main Paragraph-->
 
 <!--Begin Image Gallery-->
-  <div style="order: 5" id="gallery">
+  <div class="gallery">
+    <div class="scroll-container">
     <div class="imageContainer">
  <img class="draggable" src="../imgs/car-crash.jpg">
   <img class="draggable" src="../imgs/j-over-broadway.jpg">
@@ -126,9 +98,39 @@ was a peaceful way to end my journey.</p>
   <img class="draggable" src="../imgs/kk-set.jpg">
   <img class="draggable" src="../imgs/seth-set.jpg">
   <img class="draggable" src="../imgs/courtyard.jpg">
+</div>
 <!--End Image Gallery-->
 
+  <!--Begin Mute and Unmute Buttons, Volume Control-->
+  <div class="buttons">
+    <div class="draggable">
+<button id="muteAllButton" onclick="muteButton" type="button">mute audio</button>
+<button id="unmuteAllButton" onclick="unmuteButton" type="button">unmute audio</button>
+<button id="volumeUpButton" onclick="volumeUpButton" type="button">raise volume</button>
+<button id="volumeDownButton" onclick="volumeDownButton" type="button">lower volume</button>
+<button onclick="toggleMute('video1')" type="button">mute video1</button>
+<button onclick="toggleMute('video2')" type="button">mute video2</button>
+<button onclick="toggleMute('video3')" type="button">mute video3</button>
+<button onclick="toggleMute('video4')" type="button">mute video4</button>
+<button onclick="toggleMute('video5')" type="button">mute video5</button>
+<button onclick="toggleMute('video6')" type="button">mute video6</button>
+<button onclick="toggleMute('video7')" type="button">mute video7</button>
+<button onclick="toggleMute('video8')" type="button">mute video8</button>
+</div>
+</div> 
+<!--End Mute and Unmute Buttons, Volume Control-->
+
+<!--Begin  Button Directions-->
+<div class="paragraph" id="button-controls">
+  <p>Each button here can be utilized to create an ever changing soundscape by utilizing the
+    videos on the page. By selectively muting or turning on certain videos a new set of sounds
+    is formed.
+  </p>
+  </div>
+  <!--End Button Directions-->
+
   <!--Begin Video Gallery-->
+  <div class="video-gallery">
   <div id="myVideo">
   <video id="video1" class="video, draggable"  autoplay muted loop>
     <source src="../imgs/broadway-walking.mp4" type="video/mp4">
@@ -155,9 +157,9 @@ was a peaceful way to end my journey.</p>
     <source src="../imgs/jame-set-4.mp4" type="video/mp4">
   </video>
     </div>
+  </div>
     <!--End Video Gallery-->
     
-</div>
 </div>
 </div>
 </body>
