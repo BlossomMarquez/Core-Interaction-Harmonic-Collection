@@ -70,19 +70,22 @@ pre {
 
 .paragraph {
   font-family: "IBMPlexSansText";
-  line-height: clamp(15px, 5vw, 65px);
+  line-height: clamp(15px, 5vw, 70px);
   font-size: clamp(20px, 5vw, 70px);
-  width: clamp(25%, 75%, 100%);
+  width: clamp(25%, 95%, 100%);
   margin-left: 0rem;
   margin-right: 2rem;
-  display: flex;
-  align-items: center;
+  margin-top: 0rem;
+float: left;
 }
 
 p {
   max-width: 100%;
   max-height: 100%;
-margin-top: 0;
+}
+
+span {
+  opacity: 0.05;
 }
 
 .scroll-container {
