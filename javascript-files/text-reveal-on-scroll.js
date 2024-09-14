@@ -1,15 +1,15 @@
 let paragraphs = [...document.querySelectorAll('p')];
-let spans =[ ];
-console.log(paragraphs); 
+let spans = [];
+
+console.log(paragraphs)
 
 paragraphs.forEach(paragraph => {
-    let htmlString = ' ';
+    let htmlString = '';
     let pArray = paragraph.textContent.split('');
-    for (let i = 0; i< pArray.length; i++) {
-        htmlString +=   '<span>${pArray[i}}</span>';
+    for (let i = 0; i< pArray.length; i++){
+        htmlString += `<span>${pArray[i]}</span>`;
         } 
         paragraph.innerHTML = htmlString;
-        
+})
 
-}
-)
+spans = [...document.querySelectorAll('span')];

@@ -68,7 +68,7 @@ pre {
   height: 50px;
   }
 
-.paragraph {
+p {
   font-family: "IBMPlexSansText";
   line-height: clamp(15px, 5vw, 70px);
   font-size: clamp(20px, 5vw, 70px);
@@ -76,10 +76,7 @@ pre {
   margin-left: 0rem;
   margin-right: 2rem;
   margin-top: 0rem;
-float: left;
-}
-
-p {
+  float: left;
   max-width: 100%;
   max-height: 100%;
 }
