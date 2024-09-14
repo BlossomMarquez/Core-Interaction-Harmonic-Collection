@@ -70,7 +70,7 @@ pre {
 
 .paragraph {
   font-family: "IBMPlexSansText";
-  line-height: 1.2em;
+  line-height: clamp(15px, 5vw, 55px);
   font-size: clamp(20px, 5vw, 70px);
   width: 30%;
   margin-left: 0rem;
