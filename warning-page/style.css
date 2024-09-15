@@ -1,8 +1,7 @@
 * {
-    margin: 1rem 1rem;
     padding: 0;
     box-sizing: border-box;
-    font-family: "AkzidenzGroteskRegular";
+    font-family: "IBMPlexSansText";
     font-weight: 200;
     letter-spacing: -0.025em;
     text-align: center;
@@ -23,16 +22,16 @@ header {
 }
 
 p {
-    margin-bottom: 8rem;
-    font-size: clamp(20px, 5vw, 50px)
+    font-size: clamp(10px, 2vw, 25px)
 }
 
 #warning {
-    font-family: "AkzidenzGroteskBold";
+    font-family: "IBMPlexMono";
+    margin-bottom: 1rem;
 }
 
 #continue {
-    font-size: 4rem;
+  margin-bottom: 3rem;
 }
 
 .no-box {
@@ -40,7 +39,7 @@ p {
     margin: 2rem 2rem;
     padding: 1rem;
     border: white;
-    border-width: 5px;
+    border-width: 2px;
     border-style: solid;
 }
 
@@ -49,7 +48,7 @@ p {
     margin: 2rem 2rem;
     padding: 1rem;
     border: white;
-    border-width: 5px;
+    border-width: 2px;
     border-style: solid;
 }
 

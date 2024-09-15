@@ -4,8 +4,11 @@ html {
 
 body {
   font-family: "IBMPlexSansText";
-  color: #ffff18;
-  background-color: #1a1a1a;
+  color: #61e244;
+  background-image: url(../imgs/ouroboros2.gif);
+  background-color: rgba(32, 32, 32, 0.85);
+  background-blend-mode: lighten;
+  background-attachment: fixed;
   min-height: 100vh;
   min-width: 100vh;
   max-width: 1920px;
@@ -14,6 +17,7 @@ body {
   margin-top: 0rem;
 }
 
+/*
 #BgVideo {
   object-fit: cover;
  width: 100%;
@@ -22,8 +26,10 @@ body {
  top: 0;
  left: 0;
  overflow: visible;
- opacity: 0.9;
+ opacity: 0.85;
+ margin-top: 25rem; 
  }
+*/
 
 .header {
   font-family: "AkzidenzGroteskRegular";
@@ -56,7 +62,7 @@ pre {
   width: 20%;
   margin-left: 0;
   font-family: "IBMPlexMono";
-  font-size: 0.4rem;
+  font-size: clamp(.25rem, .5rem, 1.25rem);
   float: left;
 }
 
@@ -86,52 +92,7 @@ p {
 }
 
 span {
-  opacity: 0.01;
-}
-
-.scroll-container {
-  background-color: #ffffff;
-  overflow:visible;
-  white-space: nowrap;
-  padding: 2px;
-  max-width: 100vw;
-  max-height: 100vw;
-  width: 100%;
-  height: 100%;
-}
-
-.scroll-container img {
-  padding: 2px;
-}
-
-.gallery {
-  float: left;
-}
-
-img {
-  width: 10%;
-  height: 10%;
-  margin: 0 0;
-  flex-grow: 0;
-}
-
-img:hover {
-  width: 25%;
-  height: 25%;
-}
-
-video:hover {
-  width: 30%;
-  height: 30%;
-}
-
-video {
-  width: 20%;
-  height: 20%;
-}
-
-.video-gallery {
-  float: left;
+  opacity: 0.001;
 }
 
 a, a:hover, a:visited, a:active {
