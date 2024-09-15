@@ -7,31 +7,7 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-<!--audio control buttons script-->
-<script src="../javascript-files/audio-buttons-script.js"></script>
 
-<!--individual mute/unmute button script-->
-<script src="../javascript-files/individual-video-mute.js"></script>
-
-
-      <!--draggable image script-->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-      
-      <script>
-      
-      
-       // This code is for moving around elements within side a set box, because of the flexbox container this is need for functionality but doesn't affect the actual bounding box// 
-      
-      
-      $(function () {
-         $(".draggable").draggable({
-           containment: ".parent"
-          });
-      });
-       
-      </script>
-   <!-- <div class="flex-container"> -->
         <!--Begin Header-->
 <div class="header">
   <h1>
@@ -44,7 +20,7 @@
 <!--Begin Nav Bar-->
 <nav class="draggable">
   <a href="." target="_self">the living gallery</a> |
-  <a href="../ouroboros" target="_blank">ouroboros</a> |
+  <a href="../warning-page" target="_blank">ouroboros</a> |
   <a href="Entry3" target="_blank">entry3</a> |
   <a href="Entry4" target="_blank">entry4</a> |
   <a href="Entry5" target="_blank">entry5</a> |
@@ -162,5 +138,36 @@ was a peaceful way to end my journey.</p>
     
 </div>
 </div>
+
+<!--Begin Scripts-->
+
+<!--audio control buttons script-->
+<script src="../javascript-files/audio-buttons-script.js"></script>
+
+<!--individual mute/unmute button script-->
+<script src="../javascript-files/individual-video-mute.js"></script>
+
+<!--Text reveal on scroll script
+<script src="../javascript-files/text-reveal-on-scroll.js"></script>-->
+
+      <!--draggable image script-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      
+      <script>
+      
+      
+       // This code is for moving around elements within side a set box, because of the flexbox container this is need for functionality but doesn't affect the actual bounding box// 
+      
+      
+      $(function () {
+         $(".draggable").draggable({
+           containment: ".parent"
+          });
+      });
+       
+      </script>
+<!--End Scripts-->
+
 </body>
 </html>

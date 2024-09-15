@@ -4,7 +4,7 @@ html {
 
 body {
   font-family: "IBMPlexSansText";
-  color: #f3f3f3;
+  color: #ffff18;
   background-color: #1a1a1a;
   min-height: 100vh;
   min-width: 100vh;
@@ -13,6 +13,17 @@ body {
   margin-left: 2rem;
   margin-top: 0rem;
 }
+
+#BgVideo {
+  object-fit: cover;
+ width: 100%;
+ height: 100%;
+ position: fixed;
+ top: 0;
+ left: 0;
+ overflow: visible;
+ opacity: 0.9;
+ }
 
 .header {
   font-family: "AkzidenzGroteskRegular";
