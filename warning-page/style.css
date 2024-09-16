@@ -6,6 +6,7 @@
     letter-spacing: -0.025em;
     text-align: center;
     text-decoration: none;
+    color: #61e244;
 }
 
 html, body {
@@ -22,24 +23,43 @@ header {
 }
 
 p {
-    font-size: clamp(10px, 2vw, 25px)
+    font-size: clamp(10px, 2vw, 25px);
+}
+
+.content {
+  margin-top: 15rem;
+}
+
+#content {
+  width: 25rem;
+  margin: auto;
 }
 
 #warning {
     font-family: "IBMPlexMono";
+    font-size: clamp(1rem,2.75rem,4rem);
     margin-bottom: 1rem;
+    letter-spacing: 5px;
+}
+
+#discretion {
+  font-family: "AkzidenzGroteskBold";
+  font-size: clamp(.75rem,1.5rem,2.25rem);
+  letter-spacing: .1rem;
 }
 
 #continue {
-  margin-bottom: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 1.75rem;
+  font-size: clamp(.5rem,1.25rem,1.75rem);
 }
 
 .no-box {
     display: inline;
     margin: 2rem 2rem;
     padding: 1rem;
-    border: white;
-    border-width: 2px;
+    border: #61e244;
+    border-width: clamp(.01rem,2px,3px);
     border-style: solid;
 }
 
@@ -47,8 +67,8 @@ p {
     display: inline;
     margin: 2rem 2rem;
     padding: 1rem;
-    border: white;
-    border-width: 2px;
+    border: #61e244;
+    border-width: clamp(.01rem,2px,3px);
     border-style: solid;
 }
 
