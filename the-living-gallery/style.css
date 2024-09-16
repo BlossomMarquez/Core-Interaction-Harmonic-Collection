@@ -102,15 +102,15 @@ margin-top: 0;
 }
 
 img {
-  width: 10%;
-  height: 10%;
+  width: 20%;
+  height: 20%;
   margin: 0 0;
   flex-grow: 0;
 }
 
 img:hover {
-  width: 25%;
-  height: 25%;
+  width: 30%;
+  height: 30%;
 }
 
 video:hover {
@@ -132,6 +132,9 @@ a, a:hover, a:visited, a:active {
   color: inherit;
 }
 
+a:hover {
+  color: #61e244;
+}
 
 /* Style for draggable image script, this effects the mouse pointer*/
 

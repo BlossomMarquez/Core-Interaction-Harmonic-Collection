@@ -2,14 +2,28 @@ html {
   height: 100%;
 }
 
-body {
-  font-family: "AkzidenzGroteskRegular";
-  color: #1d1d1d;
-  background-color: #efefef;
-  min-height: 100vh;
-  min-width: 100vh;
+* {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  padding: clamp(1px, 3px, 5px);
 }
 
+body {
+  font-family: "IBMPlexSansText";
+  color: #1d1d1d;
+  background-image: url(./imgs/seth-and-jame-walking.gif);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 0rem;
+  min-height: 100vh;
+  min-width: 100vh;
+  max-width: 150vh;
+  max-height: 100vh;
+}
+
+/*
 #BgVideo {
  object-fit: cover;
 width: 100vw;
@@ -19,6 +33,7 @@ top: 0;
 left: 0;
 overflow: visible;
 }
+*/
 
 /*
   flex-container {
@@ -31,14 +46,23 @@ align-content: center;
 }
 */
 
+h1 {
+  margin: 0;
+}
+
 .header {
   font-family: "AkzidenzGroteskRegular";
   font-size: 1.5em;
   letter-spacing: 1px;
-  width: 0px;
   float: right;
   width: 20%;
   margin-right: 2rem;
+  margin-bottom: 1rem;
+  background-color: #efefef;
+}
+
+#alternate-style {
+  float: right;
 }
 
 pre {
@@ -54,42 +78,30 @@ pre {
   line-height: 1.2em;
   font-size: 0.8em;
   width: 20%;
-  margin-top: 2rem;
-  margin-left: 1rem;
   padding-right: 2rem;
   float: left;
+  background-color: #efefef;
+  margin-bottom: .75rem;
 }
 
 nav {
   font-family: "IBMPlexSansText";
 line-height: 1.2em;
 font-size: 0.8em;
-width: 20%;
-margin-left: 1rem;
+width: 22%;
 float: left;
-}
-
-nav a {
-  display: inline;
-  width: auto;
-  height: auto;
-}
-
-img {
-  width: 20%;
-  height: 20%;
-  margin: .125rem .125rem;
-}
-
-a {
-  height: 50px;
-width: 100px;
-margin-top: 6.5rem;
+margin-bottom: 15rem;
+background-color: #efefef;
 }
 
 a, a:hover, a:visited, a:active {
   text-decoration: none;
   color: inherit;
+  display: inline;
+}
+
+a:hover {
+  color: #61e244;
 }
 
 .footer {
@@ -97,6 +109,7 @@ a, a:hover, a:visited, a:active {
   font-size: 1rem;
   color: #1d1d1d;
   background-color: #efefef;
+  margin-bottom: 0;
 }
 
 /* Style for draggable image script */

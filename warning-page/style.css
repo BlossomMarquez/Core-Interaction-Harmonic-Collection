@@ -50,31 +50,39 @@ p {
 
 #continue {
   margin-top: 3rem;
-  margin-bottom: 1.75rem;
+  margin-bottom: 1rem;
   font-size: clamp(.5rem,1.25rem,1.75rem);
 }
 
 .no-box {
-    display: inline;
-    margin: 2rem 2rem;
-    padding: 1rem;
-    border: #61e244;
-    border-width: clamp(.01rem,2px,3px);
-    border-style: solid;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.no-box:hover {
+  border-color: #efefef;
 }
 
 .yes-box {
-    display: inline;
-    margin: 2rem 2rem;
-    padding: 1rem;
-    border: #61e244;
-    border-width: clamp(.01rem,2px,3px);
-    border-style: solid;
+    display: inline-block;
+    width: 100px;
+    margin: 0 5px;
 }
 
 a, a:hover, a:visited, a:active {
     text-decoration: none;
+    display: inline-block;
     color: inherit;
+    padding: 10px 25px;
+    background-color: #161616;
+    border: solid;
+    border-color: #61e244;
+    width: 100px;
+  }
+
+  a:hover {
+    color: #efefef;
+    border-color: #efefef;
   }
 
 /* Fonts */
