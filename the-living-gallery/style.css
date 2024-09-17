@@ -136,6 +136,14 @@ a:hover {
   color: #61e244;
 }
 
+.footer {
+  float: left;
+  font-size: 1rem;
+  color: #1d1d1d;
+  margin-bottom: 0;
+}
+
+
 /* Style for draggable image script, this effects the mouse pointer*/
 
 .draggable:hover {
