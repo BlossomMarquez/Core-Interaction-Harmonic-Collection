@@ -19,7 +19,7 @@ body {
 
 body:hover {
   color: #3f42e6;
-  background-color: #ff3c00;
+  background-color: #f987c2;
 }
 
 .grid-container {
@@ -76,8 +76,8 @@ pre {
 }
 
 pre:hover {
-  color: #3f42e6;
-  background-color: #ff3c00;
+  color: #f987c2;
+  background-color: #3f42e6;
   height: 315px;
 }
 
@@ -119,7 +119,9 @@ flex-wrap: wrap;
 figcaption {
   font-size: .7rem;
   background-color: #f2f2f2;
-  height: 50px;
+  height: 250px;
+  width: 100px;
+  text-wrap: wrap;
 }
 
   .footer {
