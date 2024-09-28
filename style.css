@@ -58,7 +58,7 @@ h1 {
   width: 20%;
   margin-right: 2rem;
   margin-bottom: 1rem;
-  background-color: #efefef;
+  background-color: rgba(239, 239, 239, 0.4);
 }
 
 #alternate-style {
@@ -80,7 +80,7 @@ pre {
   width: 20%;
   padding-right: 2rem;
   float: left;
-  background-color: #efefef;
+  background-color: rgba(239, 239, 239, 0.4);
   margin-bottom: .75rem;
 }
 
@@ -91,7 +91,7 @@ font-size: 0.8em;
 width: 22%;
 float: left;
 margin-bottom: 15rem;
-background-color: #efefef;
+background-color: rgba(239, 239, 239, 0.4);
 }
 
 a, a:hover, a:visited, a:active {
@@ -108,7 +108,7 @@ a:hover {
   float: left;
   font-size: 1rem;
   color: #1d1d1d;
-  background-color: #efefef;
+  background-color: rgba(239, 239, 239, 0.4);
   margin-bottom: 0;
 }
 

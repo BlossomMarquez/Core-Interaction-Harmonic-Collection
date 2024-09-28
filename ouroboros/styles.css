@@ -70,7 +70,7 @@ pre {
   font-family: "IBMPlexMono";
   font-size: clamp(.25rem, .5rem, 1.25rem);
   float: left;
-  background-color:#1d1d1d;
+  background-color:rgba(29, 29, 29,1);
 }
 
   nav {

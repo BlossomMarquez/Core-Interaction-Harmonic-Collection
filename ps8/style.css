@@ -1,0 +1,36 @@
+* {
+    background-color: #efefef;
+    color: #121212;
+    font-family: sans-serif;
+    margin: 2rem;
+    text-decoration: none;
+}
+
+.grid-container {
+    margin: 0;
+    display: grid;
+    grid-auto-columns: 33% 33% 33%;
+    grid-template-areas:
+    'head . . '
+    '. vid .'
+    '. para .';
+}
+
+.header {
+grid-area: head;
+margin: 0;
+}
+
+.paragraph {
+grid-area: para;
+margin: 0;
+}
+
+video {
+grid-area: vid;
+margin: 0;
+}
+
+a {
+    margin: 0;
+}
