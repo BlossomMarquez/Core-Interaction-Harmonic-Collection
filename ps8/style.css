@@ -3,6 +3,7 @@
     color: #ffffff;
     margin: 2rem;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 body {
@@ -15,12 +16,14 @@ body {
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-rows: 1fr auto;
+    grid-template-rows: auto;
     grid-auto-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas:
-    'head vid vid .'
-    '. para para .'
-    '. space space .';
+    'head . . .'
+    '. para para vid'
+    '. neg neg .'
+    '. space space .'
+    '. foot foot .';
 }
 
 h1 {
@@ -59,25 +62,32 @@ margin: 0;
 font-size: 1rem;
 }
 
-span {
-  opacity: 0.001;
-  background-color: #1d1d1d;
-}
-
 video {
     margin: 0;
 }
 
-#video {
+#video-container {
 grid-area: vid;
 margin: 0;
 width: 100%;
 height: auto;
 object-fit: cover;
+position: sticky;
+top: 5%;
+margin-bottom: 10rem;
+}
+
+#video {
+  width: 100%;
+  height: auto;
+}
+
+#video:hover {
+transform: scale(2) translateX(-5rem);
 }
 
 #vidcaption {
-  grid-area: vid;
+grid-area: vid;
 margin: 0;
 width: 100%;
 height: auto;
@@ -89,10 +99,20 @@ a {
     margin: 0;
 }
 
+.footer {
+  float: left;
+  font-size: 1rem;
+  color: #1d1d1d;
+  background-color: rgba(239, 239, 239, 0.4);
+  margin: 0;
+  grid-area: foot;
+}
+
 /* Experiments with gradient and image overlays section */
 
 .space {
-  padding-bottom: 150rem;
+  padding-top: 150rem;
+  padding-bottom: 25rem;
   margin: 0;
   grid-area: space;
   width: 100%;
@@ -122,9 +142,12 @@ figure {
 }
 
 #negative-margins {
-  margin-bottom: -100rem;
+  margin-bottom: 0;
   font-size: 2rem;
   line-height: 5rem;
+  grid-area: neg;
+  width: 100%;
+  margin: 0;
 }
 
 /* Scrolling Text Animation */
