@@ -1,12 +1,7 @@
-const videos = document.querySelectorAll('.video');
+document.getElementById("video").addEventListener("mouseover", function() {
+	this.pause();
+});
 
-videos.forEach(video => {
-  video.addEventListener('mouseleave', () => {
-    video.play();
-  });
-  
-  video.addEventListener('mouseenter', () => {
-    video.pause();
-    video.currentTime = 0;
-  });
+document.getElementById("video").addEventListener("mouseleave", function() {
+	this.play();
 });
