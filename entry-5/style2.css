@@ -49,47 +49,58 @@ body {
     background-color: rgb(211, 211, 211);
     font-size: 3rem;
     font-family: "AkzidenzGroteskRegular";
-    transform: scaleY(2) translateY(3.5rem) translateX(3rem) translateZ(1rem) skewY(35deg);
-}
+    transform: scaleY(2) translateY(1rem) translateX(4rem) translateZ(1rem) skewY(35deg);
+    filter: blur(1rem);
+    z-index: 2;
+    opacity: .8;
+  }
 
 .brick1 {
     grid-area: brick1;
     background-color: #7c7c7c;
+    filter: blur(1rem);
 }
 
 .brick2 {
     grid-area: brick2;
     background: #949494;
+    filter: blur(1rem);
 }
 
 .brick3 {
     grid-area: brick3;
     background-color: #c5c5c5;
+    filter: blur(1rem);
 }
 
 .brick4 {
     grid-area: brick4;
     background-color: #5e5e5e;
+    filter: blur(1rem);
 }
 
 .brick5 {
     grid-area: brick5;
     background-color: #cacaca;
+    filter: blur(1rem);
 }
 
 .brick6 {
     grid-area: brick6;
     background-color: #414141;
+    filter: blur(1rem);
 }
 
 .brick7 {
     grid-area: brick7;
     background-color: #bebebe;
+    filter: blur(1rem);
 }
 
 .brick8 {
     grid-area: brick8;
     background-color: #949494;
+    filter: blur(1rem);
 }
 
 
@@ -125,7 +136,8 @@ nav {
     grid-column: 4 / 2;
     grid-row: 3 / 1; */
     font-size: 3rem;
-    transform: skew(-30deg) translateX(7.2rem);
+    transform: skew(-30deg) translateX(-3.7rem);
+    z-index: 1;
 }
 
 .footer {
@@ -143,6 +155,7 @@ nav {
     background-color: rgb(85, 42, 165);
     transform: skew(30deg) translateX(-7.3rem);
     overflow: hidden;
+    z-index: 1;
 }
 
 .fill2 {
@@ -159,13 +172,17 @@ nav {
     '. brick6 . brick8';
     /* Subgrid Rules End */
     grid-area: fill2;
-    background-color: #953b1f;
+    background-color: #5ba8e8;
     transform: scaleY(2) translateY(3.5rem) translateX(5.9rem) translateZ(1rem);
 }
 
 .fill3 {
+    width: 17.5vw;
+    height: 27vh;
     grid-area: fill3;
     background-color: #2b6bbe;
+    transform: scaleY(1.8) translateY(3rem);
+    z-index: 1;
 }
 
 .fill4 {
@@ -182,13 +199,84 @@ nav {
     '. brick6 . brick8';
     /* Subgrid Rules End */
     grid-area: fill4;
-    background-color: #953b1f;
+    background-color: #4862e6;
     transform: scaleY(1.71) translateY(3.5rem) translateX(5.9rem) translateZ(1rem);
 }
 
 .fill5 {
+  display: grid;
+  width: 17.5vw;
+  height: 27vh;
+  /* Subgrid Rules Begin */
+  grid-template-columns: 25% 50% 25%;
+  grid-template-rows: 50% 50%;
+  grid-template-areas: 
+  'brick1 . brick3 .'
+  '. brick2-1 . brick4'
+  'brick5 . brick7 .'
+  '. brick6 . brick8';
+  /* Subgrid Rules End */
     grid-area: fill5;
     background-color: #c681ff;
+    transform: scaleY(1.8) translateY(3rem) translateZ(1rem);
+}
+
+.brick2-1 {
+  grid-area: brick2-1;
+  border-style: solid;
+  border-color: #24e86f;
+  padding: .5rem;
+  display: grid;
+  /* Subgrid Rules Begin */
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 50% 10% 10% 10% 10% 10%;
+  grid-template-areas: 
+  'win1 win2 win3 win4'
+  '. brick2-1 . brick4'
+  'brick5 . brick7 .'
+  '. brick6 . dh'
+  '. . . .'
+  '. . . .';
+  /* Subgrid Rules End */
+}
+
+.door-window1 {
+  grid-area: win1;
+  border: solid;
+  border-color: #f6464a;
+  border-width: .1rem;
+  animation: 10000ms infinite ease-in-out color-change;
+}
+
+.door-window2 {
+  grid-area: win2;
+  border: solid;
+  border-color: #168ec6;
+  border-width: .1rem;
+  animation: 10000ms infinite ease-in-out color-change;
+}
+
+.door-window3 {
+  grid-area: win3;
+  border: solid;
+  border-color: #f646dc;
+  border-width: .1rem;
+  animation: 10000ms infinite ease-in-out color-change;
+}
+
+.door-window4 {
+  grid-area: win4;
+  border: solid;
+  border-color: #dcf646;
+  border-width: .1rem;
+  animation: 10000ms infinite ease-in-out color-change;
+}
+
+.door-handle {
+  grid-area: dh;
+  background-color: #2828d1;
+  margin-left: .3rem;
+  margin-right: .3rem;
 }
 
 .fill6 {
@@ -209,19 +297,24 @@ nav {
     'brick5 . brick7 .'
     '. brick6 . brick8';
     /* Subgrid Rules End */
+    z-index: 3;
     grid-area: fill7;
-    background-color: #953b1f;
-    transform: scaleY(2) translateY(3.5rem) translateX(5.9rem) translateZ(1rem);
+    background-color: #ff3c00;
+    transform: scaleY(3) translateY(2rem) translateX(5.9rem) translateZ(1rem);
 }
 
 .fill8 {
+    width: 17.5vw;
+    height: 27vh;
     grid-area: fill8;
     background-color: #f6464a;
+    transform: scaleY(1.8) translateY(3rem) translateZ(1rem);
 }
 
 .fill9 {
     grid-area: fill9;
-    background-color: #24e86f;
+    background: rgb(255,139,0);
+    background: linear-gradient(180deg, rgb(255, 0, 0) 28.68%, rgba(36,232,111,1) 1%); 
     /* Start subgrid for window */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -230,7 +323,9 @@ nav {
     'window1 window2'
     'window3 window4';
     /* End subgrid for window */
-    padding: 1rem;
+    padding: 3rem;
+    padding-top: 10.5rem;
+    transform: scaleY(1.4) translateY(-3.6rem);
 }
 
 .window1 {
@@ -301,22 +396,22 @@ nav {
 
   @keyframes color-change2 {
     0% {
-      background-color: rgb(167, 209, 30);
+      background-color: rgb(255, 255, 255);
     }
     20% {
-      background-color: rgb(246, 214, 35);
+      background-color: rgb(146, 146, 146);
     }
     40% {
-      background-color: rgb(233, 49, 49);
+      background-color: rgb(89, 89, 89);
     }
     60% {
-      background-color: rgb(210, 72, 210);
+      background-color: rgb(0, 0, 0);
     }
     80% {
-      background-color: rgb(27, 199, 27);
+      background-color: rgb(86, 86, 86);
     }
     100% {
-      background-color: rgb(54, 220, 220);
+      background-color: rgb(255, 255, 255);
     }
   }
 
