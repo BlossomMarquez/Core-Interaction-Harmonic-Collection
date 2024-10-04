@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Make sure to change page title-->
+  <title>clock - grottesca.</title>
+  <!--Make sure to change stylesheet link-->
+  <link rel="stylesheet" href="clock.css">
+</head>
+
+
+<body onload="startTime()">
+  <div class="grid">
+
+    <div class="clock" onclick="window.location.href='../index.html'">
+      <div id="txt">
+      </div>
+    </div>
+
+    <div id="mySection" class="wrap" onclick="randSite()" href="#">
+      <div id="title">Title</div>
+      <div id="subtitle">Subtitle</div>
+      <br>
+      <div title="clicking this reloads the page"><button id="btnRefresh" type="button"><u>click here to generate a new string</u></button></div>
+    </div>
+
+    <div class="credit">
+      <p>random string generator made by <a href="https://compform.net/text/" target="_blank">justin bakse</a> of parsons design and technology program</p>
+    </div>
+
+    <div class="fill2">
+      <!--This is merely a div showing what space is open on the page and how it looks.-->
+    </div>
+
+    <div class="fill3">
+      <!--This is merely a div showing what space is open on the page and how it looks.-->
+    </div>
+
+    <div class="fill4">
+      <!--This is merely a div showing what space is open on the page and how it looks.-->
+    </div>
+
+    <div class="fill5">
+      <!--This is merely a div showing what space is open on the page and how it looks.-->
+    </div>
+
+
+  </div>
+
+  <script src="../javascript-files/clock.js"></script>
+  <script src="../javascript-files/reload-button.js"></script>
+  <script>
+  var arr = ["blossommarquez.github.io/harmonic-collection/",
+    "blossommarquez.github.io/harmonic-collection/the-living-gallery/", "blossommarquez.github.io/harmonic-collection/warning-page/", "blossommarquez.github.io/harmonic-collection/mother/", "blossommarquez.github.io/harmonic-collection/ps8/", "blossommarquez.github.io/harmonic-collection/interview"]
+    
+    function randSite(){
+            location.href = "http://" + arr[Math.floor (Math.random()*arr.length)];
+    }
+    </script>
+  <script>
+
+    document.getElementById("title").textContent = generateTitle();
+    document.getElementById("subtitle").textContent = generateSubtitle();
+
+    function generateTitle() {
+      var name_prefixes = [
+        "Swarm",
+        "Retro",
+        "Chrono",
+        "Hyper",
+        "[O]rphan",
+        "Viro",
+        "Virtual",
+        "Cyber",
+        "Neo",
+        "Schizo",
+        "Meat",
+        "Syzygy",
+        "Pandemonium",
+        "Crpyt",
+        "A",
+      ];
+      var primary_nouns = [
+        "[D]rift",
+        "Technics",
+        "Convergences",
+        "Barkers",
+        "Culture",
+        "Stition",
+        "Lemurian",
+        "Hype",
+        "Virus",
+        "Puppet",
+        "Matrix",
+        "Maker",
+        "Screamer",
+        "Posting",
+        "Strain",
+        "Core",
+        "Death",
+      ];
+      var adjectives = [
+        "Spiral",
+        "Net",
+        "Material",
+        "Syntactical",
+        "Bias",
+        "Digital",
+        "Social",
+        "Future",
+        "Virtual",
+        "Gothic",
+        "Sacred",
+        "Ideological",
+        "Esoteric",
+        "Peripheral",
+        "Artificial",
+        "Libidinal",
+        "Diagrammatic",
+        "Axiomatic",
+        "Zero",
+        "Ultra",
+        "Drugged",
+        "Restrained",
+        "Twinning",
+        "Burnt",
+        "Phosphorescent",
+        "Cryptic",
+      ];
+      var secondary_nouns = [
+        "Teotwaki",
+        "Oecumenon",
+        "Monarch",
+        "Satori",
+        "Miskatonic",
+        "N'Ma",
+        "Equinoctial",
+        "Dibba",
+        "Mu-Nagwi",
+        "Mu",
+        "Tak",
+        "Nago",
+        "Katak",
+        "Tchattuk",
+        "Architectonic",
+        "Sigil",
+        "Domu-Loggoon",
+        "Archon",
+        "Axsys",
+        "Humppa-Taddum",
+        "Zygonovism",
+        "Barkerian",
+        "Yugas",
+      ];
+
+      var name_prefix = sample(name_prefixes);
+      var primary_noun = sample(primary_nouns);
+      var adjective = sample(adjectives);
+      var secondary_noun = sample(secondary_nouns);
+
+      var title = "";
+      if (Math.random() < 0.5) {
+        title = `${name_prefix} ${primary_noun} and the ${adjective} ${secondary_noun}`;
+      } else {
+        title = `The ${adjective} ${secondary_noun} of ${name_prefix} ${primary_noun}`;
+      }
+
+      return title;
+    }
+
+    function generateSubtitle() {
+      var story_adjectives = [
+        "Ignored",
+        "Bacterial",
+        "World",
+        "Intense",
+        "Kinetic",
+        "Cross",
+        "Cultural",
+        "Impending",
+        "Cosmic",
+        "Ancient",
+        "Dread",
+        "Catatonic",
+        "Illuminating",
+        "Supposed",
+        "Post-Modern",
+        "Delusory",
+        "Abstract",
+      ];
+      var story_formats = [
+        "Zone",
+        "Area",
+        "Marcation",
+        "Point",
+        "Space",
+        "Sector",
+        "Section",
+        "Region",
+        "Expanse",
+        "Locality",
+        "District",
+      ];
+
+      var adjective = sample(story_adjectives);
+      var format = sample(story_formats);
+      var subtitle = `A ${adjective}  ${format}`;
+
+      return subtitle;
+    }
+
+    function sample(array) {
+      const index = Math.floor(Math.random() * array.length);
+      return array[index];
+    }
+  </script>
+</body>
