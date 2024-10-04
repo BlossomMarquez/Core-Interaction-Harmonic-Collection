@@ -17,7 +17,7 @@ body {
     padding: 0;
     display: grid;
     grid-template-rows: auto;
-    grid-auto-columns: repeat(4, 1fr);
+    grid-auto-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas:
     'head . . .'
     '. para para vid'
@@ -83,7 +83,7 @@ margin-bottom: 10rem;
 }
 
 #video:hover {
-transform: scale(5) translateX(-10rem) translateY(3.45rem);
+transform: scale(2) translateX(-5.25rem) translateY(4.2rem);
 }
 
 #vidcaption {
@@ -164,6 +164,7 @@ figure {
   font-size: 2.5rem;
   margin-bottom: 5rem;
   margin: 0;
+  word-break:  break-all;
 }
 
 @keyframes scroll {

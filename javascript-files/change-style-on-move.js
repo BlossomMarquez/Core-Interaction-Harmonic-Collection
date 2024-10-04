@@ -4,9 +4,9 @@ let isStyle1 = true; // Flag to track current style
 function switchStyle() {
     const stylesheet = document.getElementById('theme-stylesheet');
     if (isStyle1) {
-        stylesheet.setAttribute('href', '../CSS/style2.css');
+        stylesheet.setAttribute('href', './style2.css');
     } else {
-        stylesheet.setAttribute('href', '../CSS/style1.css');
+        stylesheet.setAttribute('href', './style1.css');
     }
     isStyle1 = !isStyle1; // Toggle the style flag
 }

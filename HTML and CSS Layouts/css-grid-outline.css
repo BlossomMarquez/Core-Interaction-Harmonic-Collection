@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.grid {
+    /* This is the border of your grid, commit or omit as needed.
+    border-style: solid;
+    border-width: 0.1rem;
+    border-color: black;
+    */
+    width: 100vw;
+    height: 200vh;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    'head cont cont fill1'
+    '. . . .' /* This line can have content added to it, until then it will not take up space on the page */
+    'fill2 para para fill3'
+    'fill4 foot foot fill5';
+}
+
+.head {
+    /* Because the content box is placed on the same line as this the head box will expand to the area that cont takes up.
+    This is the same for anything place alongside content that may be larger than itself.*/
+    padding: 1rem;
+    grid-area: head;
+    background-color: aquamarine;
+    font-size: 3rem;
+}
+
+.para {
+    padding: 1rem;
+    grid-area: para;
+    background-color: blueviolet;
+    /*
+    grid-column: 4 / 2;
+    grid-row: 5 / 3; */
+    font-size: 3rem;
+}
+
+.content {
+    padding: 1rem;
+    grid-area: cont;
+    color: white;
+    background-color: black;
+    /*
+    grid-column: 4 / 2;
+    grid-row: 3 / 1; */
+    font-size: 3rem;
+}
+
+.footer {
+    padding: 1rem;
+    grid-area: foot;
+    background-color: blue;
+    color: white;
+    font-size: 3rem;
+}
+
+/* These are open sections of the grid that can be used. Remove this symbol to comment out these fills ---> */
+
+.fill1 {
+    grid-area: fill1;
+    background-color: brown;
+}
+
+.fill2 {
+    grid-area: fill2;
+    background-color: #503405;
+}
+
+.fill3 {
+    grid-area: fill3;
+    background-color: #2bbe8d;
+}
+
+.fill4 {
+    grid-area: fill4;
+    background-color: #435302;
+}
+
+.fill5 {
+    grid-area: fill5;
+    background-color: #773ca8;
+}
+
+*/
