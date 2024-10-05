@@ -375,22 +375,22 @@ nav {
 
 @keyframes color-change {
     0% {
-      background-color: teal;
+      background-color: #4df2f2;
     }
     20% {
-      background-color: gold;
+      background-color: rgb(255, 251, 33);
     }
     40% {
-      background-color: indianred;
+      background-color: rgb(48, 227, 60);
     }
     60% {
-      background-color: violet;
+      background-color: rgb(240, 71, 240);
     }
     80% {
-      background-color: green;
+      background-color: rgb(62, 42, 241);
     }
     100% {
-      background-color: teal;
+      background-color: #4df2f2;
     }
   }
 
