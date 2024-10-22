@@ -130,7 +130,7 @@ img:hover {
     '. . cont4 cont4 cont4 cont4'
     '. . para3 para3 para3 para3'
     '. . gallery gallery gallery gallery'
-    'fill4 foot foot fill5 fill5 fill5';
+    '. . . . foot foot';
 }
 
 .head {
@@ -210,16 +210,14 @@ img:hover {
 .footer {
     padding: 1rem;
     grid-area: foot;
-    background-color: blue;
-    color: white;
     font-size: 1rem;
     font-family: 'SuisseRegular';
+    text-align: right;
 }
 
 a, a:hover, a:visited, a:active {
     text-decoration: none;
     color: inherit;
-    background-color: white;
   }
 
 /* These are open sections of the grid that can be used. Remove this symbol to comment out these fills ---> */

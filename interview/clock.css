@@ -25,6 +25,7 @@ body {
         'fill1 fill2 fill3'
         'fill4 clock fill5'
         'fill6 wrap fill8'
+        '. newstring .'
         '. credit .';
 }
 
@@ -39,8 +40,9 @@ body {
 .wrap {
     grid-area: wrap;
     display: table;
-    padding: 50px;
-    margin: 50px auto;
+    padding: 2rem;
+    margin: 4rem;
+    margin-bottom: 0.25rem;
     text-align: center;
     font-family: 'SuisseBook';
 }
@@ -66,10 +68,19 @@ body {
     border-width: 5rem;
 }
 
+.newstring {
+    grid-area: newstring;
+}
+
+.newstring:hover {
+    cursor: cell;
+}
+
 .credit {
     grid-area: credit;
     font-family: 'SuisseLight';
     font-size: 1rem;
+    margin: 1rem 0;
 }
 
 .fill1 {
