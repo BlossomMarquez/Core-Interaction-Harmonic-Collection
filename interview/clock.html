@@ -25,10 +25,12 @@
       <br>
     </div>
 
-    <div title="clicking this reloads the page" class="newstring"><button id="btnRefresh" type="button"><u>click here to generate a new string</u></button></div>
+    <div title="clicking this reloads the page" class="newstring"><button id="btnRefresh" type="button"><u>click here to
+          generate a new string</u></button></div>
 
     <div class="credit">
-      <p>random string generator made by <a href="https://compform.net/text/" target="_blank">justin bakse</a> of parsons design and technology program</p>
+      <p>random string generator made by <a href="https://compform.net/text/" target="_blank">justin bakse</a> of
+        parsons design and technology program</p>
     </div>
 
     <div class="fill2">
@@ -53,14 +55,17 @@
   <script src="../javascript-files/clock.js"></script>
   <script src="../javascript-files/reload-button.js"></script>
   <script>
-  var arr = ["blossommarquez.github.io/harmonic-collection/",
-    "blossommarquez.github.io/harmonic-collection/the-living-gallery/", "blossommarquez.github.io/harmonic-collection/warning-page/", "blossommarquez.github.io/harmonic-collection/mother/", "blossommarquez.github.io/harmonic-collection/ps8/", "blossommarquez.github.io/harmonic-collection/interview"]
-    
-    function randSite(){
-            location.href = "http://" + arr[Math.floor (Math.random()*arr.length)];
+    console.log("random page link loaded correctly;")
+
+    var arr = ["blossommarquez.github.io/harmonic-collection/",
+      "blossommarquez.github.io/harmonic-collection/the-living-gallery/", "blossommarquez.github.io/harmonic-collection/warning-page/", "blossommarquez.github.io/harmonic-collection/mother/", "blossommarquez.github.io/harmonic-collection/ps8/", "blossommarquez.github.io/harmonic-collection/interview"]
+
+    function randSite() {
+      location.href = "http://" + arr[Math.floor(Math.random() * arr.length)];
     }
-    </script>
+  </script>
   <script>
+    console.log("random string generator loaded correctly");
 
     document.getElementById("title").textContent = generateTitle();
     document.getElementById("subtitle").textContent = generateSubtitle();

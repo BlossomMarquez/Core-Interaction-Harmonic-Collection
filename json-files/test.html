@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cycling Variables</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .variable {
+            font-size: 2em;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="variable" id="display"></div>
+
+<script>
+    // Array of constructed variables
+    const variables = [
+        "Hello, World!",
+        "Welcome to my website!",
+        "Enjoy your stay!",
+        "Check out our features!",
+        "Contact us for more info!"
+    ];
+
+    // Get the current index from local storage or set it to 0
+    let currentIndex = parseInt(localStorage.getItem('currentIndex')) || 0;
+
+    // Display the current variable
+    document.getElementById('display').textContent = variables[currentIndex];
+
+    // Update the index for the next reload
+    currentIndex = (currentIndex + 1) % variables.length;
+
+    // Save the updated index back to local storage
+    localStorage.setItem('currentIndex', currentIndex);
+</script>
+
+</body>
+</html>

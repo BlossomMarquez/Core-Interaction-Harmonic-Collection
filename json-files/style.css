@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    cursor: crosshair;
+}
+
+body {
+    margin: auto 1rem;
+    /*
+    background-image: url(../imgs/numogram.png);
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    */
+    color: #ff0000;
+    font-size: 5rem;
+    font-family: 'SuisseBook';
+}
+
+#myDiv1 {
+    margin: 5rem auto;
+    background-image: url(./a0589824952_10.jpg);
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    color: #e5bd0b;
+    font-size: 1rem;
+}
+
+#myDiv2 {
+    margin: 5rem auto;
+    background-image: url(./a3872601966_10.jpg);
+    background-position: bottom;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: #ff0000;
+    font-size: 1rem;
+    width: 10%;
+}
+
+@font-face {
+    font-family: "SuisseBook";
+    src: url(../fonts/SuisseIntl-Book.otf);
+}
+
+@font-face {
+    font-family: "SuisseLight";
+    src: url(../fonts/SuisseIntl-Light.otf);
+  }
