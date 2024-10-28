@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <div style="display: grid;
                 width: 90vw;
                 height: 95vh;
-                grid-template-columns: 40% 40% 10%;
+                grid-template-columns: 30% 60% 10%;
                 grid-template-rows: 25% 8% 30% 35% 3%;
                 grid-template-areas:
                 'head . .'
@@ -59,10 +59,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 <div>Link: <a href="${band.link}" target="_blank">${band.linktext}</a></div>
                 </div>
                 <div class="tracklist" style="grid-area: list;">Track List:${songList.outerHTML}</div>
-                <div class="footer" style="grid-area: footer;">
+                <div class="footer" style="grid-area: footer; font-size: 1rem; margin-bottom: 1rem;">
                 <p>
-                    designed by blossom marquez @
-                    <a href="https://www.studioapriori.xyz" target="_blank">studioapriori</a>
+                designed by blossom marquez @
+                <a href="https://www.studioapriori.xyz" target="_blank">studioapriori</a>
                 </p>
                 </div>
                 </div>
