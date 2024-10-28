@@ -13,7 +13,7 @@ body {
     */
     color: #858585;
     font-family: 'SuisseBook';
-    background-color: rgb(236, 236, 236);
+    background-color: rgb(237, 237, 237);
 }
 
 #myDivContainer {
@@ -21,17 +21,31 @@ body {
     width: 100vw;
     display: grid;
     grid-template-columns: 10% 80% 10%;
-    grid-template-rows: 25% 50% 25%;
+    grid-template-rows: 5% 90% 5%;
     grid-template-areas: 
     '. . .'
     '. grid1 .'
     '. . .';
+    /* background-image: url(./images/dice-gif.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; */
 }
 
 .grid1 {
     grid-area: grid1;
     margin: auto;
 }
+
+img {
+    max-width: 80vw;
+    max-height: 80vh;
+}
+
+img:hover {
+    opacity: .7;
+}
+
 
 #btnRefresh {
     font-family: 'SuisseLight';
@@ -48,8 +62,8 @@ body {
 a, a:hover, a:visited, a:active {
     color: inherit;
     cursor: cell;
+    text-decoration: none;
   }
-
 
 @font-face {
     font-family: "SuisseBook";
