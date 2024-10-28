@@ -25,6 +25,13 @@ max-height: 500px;
 filter: drop-shadow(rgb(29, 29, 29).25rem .25rem 1rem);
 }
 
+img:hover {
+    opacity: .7;
+}
+
+ol {
+    list-style-position: inside;
+}
 
 .button {
     font-family: 'SuisseBook';

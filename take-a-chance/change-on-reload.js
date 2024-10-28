@@ -26,12 +26,14 @@ document.addEventListener("DOMContentLoaded", function () {
                 <div style="display: grid;
                 width: 100vw;
                 column-gap: 2rem;
-                grid-template-columns: 40% 60%;
-                grid-template-rows: 10% 20% 70%;
+                grid-template-columns: 40% 40% 20%;
+                grid-template-rows: 10% 20% 20% 40% 10%;
                 grid-template-areas:
-                'head .'
-                'image info'
-                '. list'">
+                'head . .'
+                'image info .'
+                'image list .'
+                '. list .'
+                'footer . .'">
                 <div style="grid-area: image;">
                 <a href="${band.link} src="${band.cover}" target="_blank">
                 <img style="border-radius: .5rem;" title="click image to open playlist/video" src="${band.cover}">
@@ -45,9 +47,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 <div>Genre: ${band.genre}</div>
                 <div>Year: ${band.year}</div>
                 <div>Link: <a href="${band.link}" target="_blank">${band.linktext}</a></div>
-                <div style="grid-area: list;">Songs:
-                ${songList.outerHTML}</div>
                 </div>
+                <div style="grid-area: list;">Track List:
+                ${songList.outerHTML}</div>
                 </div>
                 `;
 
