@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    cursor: crosshair;
+}
+
+body {
+    margin: auto 2rem;
+    /*
+    background-image: url(../imgs/numogram.png);
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    */
+    color: #858585;
+    font-family: 'SuisseRegular';
+    background-color: rgb(236, 236, 236);
+}
+
+img {
+width: 100%;
+max-width: 750px;
+max-height: 750px;
+filter: drop-shadow(rgb(29, 29, 29).25rem .25rem 1rem);
+}
+
+.button {
+    font-family: 'SuisseBook';
+    color: inherit;
+    background-color: inherit;
+    border: none;
+    margin: 1rem auto;
+    border-width: 1rem;
+    font-size: 1.25rem;
+}
+
+#btnRefresh {
+    font-family: 'SuisseBook';
+    background-color: inherit;
+    color: inherit;
+    border: none;
+    border-width: 2rem;
+    margin: 2rem auto;
+    font-size: 1.25rem;
+}
+
+#myDivContainer {
+    font-size: 1.25rem;
+    max-width: 100vw;
+}
+
+a, a:hover, a:visited, a:active {
+    color: inherit;
+    cursor: cell;
+  }
+
+@font-face {
+    font-family: "SuisseRegular";
+    src: url(../fonts/SuisseIntl-Regular.otf);
+}
+
+@font-face {
+    font-family: "ArizonaFlareThin";
+    src: url(../fonts/ABCArizonaFlare-Thin-Trial.otf);
+}
+
+@font-face {
+    font-family: "SuisseBook";
+    src: url(../fonts/SuisseIntl-Book.otf);
+  }
