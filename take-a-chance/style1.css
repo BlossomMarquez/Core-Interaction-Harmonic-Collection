@@ -5,14 +5,15 @@
 }
 
 body {
-    text-align: center;
     /*
     background-image: url(../imgs/numogram.png);
     background-position: center;
     background-size:contain;
     background-repeat: no-repeat;
     */
-    color: #ff0000;
+    color: #858585;
+    font-family: 'SuisseBook';
+    background-color: rgb(236, 236, 236);
 }
 
 #myDivContainer {
