@@ -18,9 +18,10 @@ body {
 }
 
 img {
-width: 100%;
-max-width: 750px;
+width: 750px;
 max-height: 750px;
+max-width: 500px;
+max-height: 500px;
 filter: drop-shadow(rgb(29, 29, 29).25rem .25rem 1rem);
 }
 

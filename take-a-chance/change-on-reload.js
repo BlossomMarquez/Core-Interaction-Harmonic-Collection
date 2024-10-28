@@ -17,7 +17,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 grid-template-areas:
                 'head .'
                 'image info'">
-                <div style="grid-area: image;"><img src="${band.cover}"></div>
+                <div style="grid-area: image;">
+                <a href="${band.link} src="${band.cover}" target="_blank">
+                <img style="border-radius: .5rem;" title="click image to open playlist/video" src="${band.cover}">
+                </a>
+                </div>
                 <div style="grid-area: info;">
                 <div>Band: ${band.artist}</div>
                 <div>Title: ${band.title}</div>
