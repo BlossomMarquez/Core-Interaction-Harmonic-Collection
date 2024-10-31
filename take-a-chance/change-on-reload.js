@@ -27,28 +27,28 @@ document.addEventListener("DOMContentLoaded", function () {
                 <div style="display: grid;
                 width: 90vw;
                 height: 95vh;
-                grid-template-columns: 30% 60% 10%;
-                grid-template-rows: 25% 8% 30% 35% 3%;
+                column-gap: 2rem;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 15vw 10vw 28vw 5vw;
                 grid-template-areas:
-                'head . .'
-                'load . .'
-                'image info .'
-                'image list .'
-                'footer . .'">
+                'head head head'
+                'home return load'
+                'image info info'
+                '. footer footer'">
                 <div style="grid-area: head;">
                 <div class="header"><p>
                 Roll the Dice
                 </p>
                 </div>
-                <div id="main-page"><button class="button" id="homeButton"><a href="..">return to home page</a></button></div>
-                <div id="main-page"><button class="button" id="returnButton"><a href=".">return to beginning</a></button></div>
                 </div>
+                <div id="main-page" style="grid-area: home;"><button class="button" id="homeButton"><a href="..">return to home page</a></button></div>
+                <div id="main-page" style="grid-area: return;"><button class="button" id="returnButton"><a href=".">return to beginning</a></button></div>
                 <div style="grid-area: image;">
                 <a href="${band.link} src="${band.cover}" target="_blank">
-                <img style="border-radius: .5rem;" title="click image to open playlist/video" src="${band.cover}">
+                <img style="border-radius: .5rem;" title="Click image to open playlist./video" src="${band.cover}">
                 </a>
                 </div>
-                <div style="grid-area: load;"><a style="text-decoration: none; font-size: 2rem;" href="./index2.html">&#8635;</a></div>
+                <div title="Click to reload page." style="grid-area: load;"><a style="text-decoration: none; font-size: 2rem;" href="./index2.html">&#8635;</a></div>
                 <div style="grid-area: info;">
                 <div>Band: ${band.artist}</div>
                 <div>Title: ${band.title}</div>
@@ -57,9 +57,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 <div>Genre: ${band.genre}</div>
                 <div>Year: ${band.year}</div>
                 <div>Link: <a href="${band.link}" target="_blank">${band.linktext}</a></div>
-                </div>
+                <br>
                 <div class="tracklist" style="grid-area: list;">Track List:${songList.outerHTML}</div>
-                <div class="footer" style="grid-area: footer; font-size: 1rem; margin-bottom: 1rem;">
+                </div>
+                <div class="footer" style="grid-area: footer; margin-bottom: 1rem; text-align: right;">
                 <p>
                 designed by blossom marquez @
                 <a href="https://www.studioapriori.xyz" target="_blank">studioapriori</a>
