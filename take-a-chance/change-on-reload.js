@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <img style="border-radius: .5rem;" title="Click image to open playlist./video" src="${band.cover}">
                 </a>
                 </div>
-                <div title="Click to reload page." style="grid-area: load;"><a style="text-decoration: none; font-size: 2rem;" href="./index2.html">&#8635;</a></div>
+                <div title="Click to reload page." style="grid-area: load;"><a style="text-decoration: none; font-size: 2rem;" href="./index2.html">&#8635; click to reload</a></div>
                 <div style="grid-area: info;">
                 <div>Band: ${band.artist}</div>
                 <div>Title: ${band.title}</div>
