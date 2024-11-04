@@ -1,1 +1,5 @@
+#ignores node-modules folder
 /node_modules
+
+#ignores nextjs-dashboard folder
+#/nextjs-dashboard
