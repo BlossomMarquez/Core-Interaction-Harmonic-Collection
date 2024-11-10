@@ -1,0 +1,46 @@
+{
+    "headers": [
+        {
+            "comment": "This is the second div",
+            "header": "Home.",
+            "link": "https://blossommarquez.github.io/harmonic-collection/",
+            "img": "./images/home.png"
+        },
+        {
+            "comment": "This is the second div",
+            "header": "The Living Gallery.",
+            "link": "https://blossommarquez.github.io/harmonic-collection/the-living-gallery",
+            "img": "./images/tlg.png"
+        },
+        {
+            "comment": "This is the third div",
+            "header": "Ouroboros.",
+            "link": "https://blossommarquez.github.io/harmonic-collection/warning-page",
+            "img": "./images/ouro.png"
+        },
+        {
+            "comment": "This is the fourth div",
+            "header": "Mother.",
+            "link": "https://blossommarquez.github.io/harmonic-collection/mother",
+            "img": "./images/mom.png"
+        },
+        {
+            "comment": "This is the fifth div",
+            "header": "PS8, or ITD.",
+            "link": "https://blossommarquez.github.io/harmonic-collection/ps8",
+            "img": "./images/ps8.png"
+        },
+        {
+            "comment": "This is the sixth div",
+            "header": "Interview.",
+            "link": "https://blossommarquez.github.io/harmonic-collection/interview",
+            "img": "./images/inter.png"
+        },
+        {
+            "comment": "This is the seventh div",
+            "header": "Take a Chance.",
+            "link": "https://blossommarquez.github.io/harmonic-collection/take-a-chance",
+            "img": "./images/take.png"
+        }
+    ]
+}

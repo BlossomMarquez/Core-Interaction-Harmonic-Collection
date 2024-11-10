@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function() {
     fetch('data.json')
         .then(response => response.json())
         .then(data => {
@@ -95,17 +95,17 @@ document.addEventListener("DOMContentLoaded", function () {
             localStorage.setItem('randomIndex', randomIndex);
         })
         .catch(error => console.error("Error fetching JSON data:", error));
-        
-        function loadScript(url) {
-            const script = document.createElement('script');
-            script.src = url;
-            script.async = true; // Optional: Load the script asynchronously
-            document.head.appendChild(script);
-            console.log(script);
-          }
 
-          
-          
-          loadScript('../javascript-files/reload-button.js');
-        
+    function loadScript(url) {
+        const script = document.createElement('script');
+        script.src = url;
+        script.async = true; // Optional: Load the script asynchronously
+        document.head.appendChild(script);
+        console.log(script);
+    }
+
+
+
+    loadScript('../javascript-files/reload-button.js');
+
 });

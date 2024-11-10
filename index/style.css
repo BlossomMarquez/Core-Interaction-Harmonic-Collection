@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-width: 0;
+    text-transform:none;
+    text-decoration: none;
+    font-weight: 400;
+    cursor: crosshair;
+}
+
+html, body {
+    font-family: sans-serif;
+    background-color: rgb(255, 255, 255);
+    color: blue;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100svh;
+    /*background-color: red;*/
+    z-index: 2;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 90svh;
+    padding-left: 2rem;
+}
+
+header h1{
+    position: relative;
+    font-size: 3rem;
+    font-family: serif;
+    z-index: 3;
+}
+
+#floating-textbox {
+    position: sticky;
+    display: inline-block;
+    z-index: 3;
+    padding: 1rem;
+}
+
+#myDivContainer{
+    color: black;
+}
+
+
+.myDiv h1 {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem
+}
+
+a:hover {
+    color: red;
+}
+
+a:visited {
+    color: blue;
+}
+
+a, a:hover, a:visited, a:active {
+    cursor: cell;
+    text-decoration: none;
+  }
