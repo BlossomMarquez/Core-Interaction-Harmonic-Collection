@@ -10,9 +10,7 @@
 }
 
 html, body {
-    font-family: sans-serif;
-    background-color: rgb(255, 255, 255);
-    color: blue;
+    background-color: #efefef;
 }
 
 canvas {
@@ -43,6 +41,13 @@ img {
     width: 50%;
     height: auto;
     top: 5rem;
+    border-radius: 10px;
+    box-shadow: 10px 10px 40px;
+}
+
+img:hover {
+    transform: scale(1.1) translateX(10%); /* Enlarges on hover */
+    transition: transform 0.3s ease; /* Smooth transition over 0.3 seconds with ease-in-out easing */
 }
 
 #floating-textbox {
@@ -65,8 +70,12 @@ img {
     font-size: 10svw;
 }
 
+.info a:hover {
+    color: #551A8B;
+}
+
 a:hover {
-    color: red;
+    color: #551A8B;
 }
 
 a:visited {

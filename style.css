@@ -12,10 +12,9 @@
 html, body {
   padding: 1rem;
   font-family: sans-serif;
-  background-color: rgb(255, 255, 255);
+  background-color: #efefef;
   color: black;
   display: inline-block;
-  margin-right: 10rem;
   height: 99svh;
   width: 80svw;
 }
@@ -48,7 +47,7 @@ nav {
 .index {
 position: absolute;
 top: 89svh;
-left: 80svw;
+left: 88svw;
   font-size: 1rem;
 }
 
