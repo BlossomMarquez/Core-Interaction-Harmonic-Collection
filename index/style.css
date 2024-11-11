@@ -90,11 +90,11 @@ a, a:hover, a:visited, a:active {
 
     img {
         width: 85%;
-        height: 500px;
+        height: auto;
         top: 5svh;
     }
 
     .chill-div {
-        height: 75svh;
+        height: 55svh;
     }
 }
