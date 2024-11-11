@@ -12,12 +12,12 @@ document.addEventListener("DOMContentLoaded", function() {
                 const infoDiv = document.getElementById(`myDiv${index + 1}`);
 
                 infoDiv.innerHTML = `
-                <div style="overflow: hidden; font-size: 10svh; display: flex; position: relative; height: calc(100svh);">
+                <div class="chill-div" style="overflow: hidden; position: relative;">
                 <h1 style="position: absolute; bottom: 2rem; left: 2rem">
                 <a href="${fill.link}" target="_blank">${fill.header}</a>
                 <h1>
                 <a href="${fill.link}" target="_blank">
-                <img style="width: 50%; height: auto; position: relative; top: 5rem; left: 2rem;" src="${fill.img}"></img>
+                <img style="position: relative; left: 2rem;" src="${fill.img}"></img>
                 </a>
                 </div>`
 

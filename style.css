@@ -17,6 +17,7 @@ html, body {
   display: inline-block;
   margin-right: 10rem;
   height: 99svh;
+  width: 80svw;
 }
 
 /*pre {
@@ -45,8 +46,9 @@ nav {
 }
 
 .index {
-position: relative;
-top: 48svh;
+position: absolute;
+top: 89svh;
+left: 80svw;
   font-size: 1rem;
 }
 
@@ -55,6 +57,30 @@ top: 48svh;
 }
 
 .footer {
-  position: relative;
-top: 48svh;
+  position: absolute;
+top: 83svh;
+}
+
+@media only screen and (max-device-width: 750px) {
+        html, body {
+          height: 60svh;
+          width: 50svw;
+        }
+
+        p {
+          width: 75%;
+        }
+
+        nav {
+          width: 75%;
+        }
+
+        .index {
+          top: 75svh;
+          left: 75svw;
+        }
+
+        .footer {
+          top: 75svh;
+        }
 }
