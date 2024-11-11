@@ -41,13 +41,6 @@ img {
     width: 50%;
     height: auto;
     top: 5rem;
-    border-radius: 10px;
-    box-shadow: 10px 10px 40px;
-}
-
-img:hover {
-    transform: scale(1.1) translateX(10%); /* Enlarges on hover */
-    transition: transform 0.3s ease; /* Smooth transition over 0.3 seconds with ease-in-out easing */
 }
 
 #floating-textbox {
@@ -70,23 +63,19 @@ img:hover {
     font-size: 10svw;
 }
 
-.info a:hover {
-    color: #551A8B;
+
+
+@media only screen and (min-device-width: 769px) {
+    img {
+    border-radius: 10px;
+    box-shadow: 10px 10px 40px;
+    }
+
+    img:hover {
+        transform: scale(1.1) translateX(10%); /* Enlarges on hover */
+        transition: transform 0.3s ease; /* Smooth transition over 0.3 seconds with ease-in-out easing */
+    }
 }
-
-a:hover {
-    color: #551A8B;
-}
-
-a:visited {
-    color: blue;
-}
-
-a, a:hover, a:visited, a:active {
-    cursor: cell;
-    text-decoration: none;
-  }
-
 
   @media only screen and (max-device-width: 768px) {
     canvas {
