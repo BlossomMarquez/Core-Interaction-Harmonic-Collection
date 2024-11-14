@@ -75,6 +75,12 @@ img:hover {
     background-color: rgb(46, 46, 46, 0.9);
     padding: 1rem;
   }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    padding-top: 2rem;
+  }
   
   /* Add Animation */
   .modal-content, #caption {  

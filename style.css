@@ -39,9 +39,8 @@ p {
   margin-bottom: 1rem;
 }
 
-nav {
-  width: 10svw;
-  margin-bottom: 1rem;
+ul {
+  list-style: none;
 }
 
 .index {
