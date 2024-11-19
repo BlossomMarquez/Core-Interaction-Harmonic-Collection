@@ -1,0 +1,497 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-width: 0;
+    text-transform:none;
+    text-decoration: none;
+    font-weight: 400;
+    cursor: crosshair;
+    z-index: 1;
+  }
+  
+  html, body {
+    padding: 1rem;
+    font-family: sans-serif;
+    background-color: #efefef;
+    color: black;
+    display: inline-block;
+    height: 160vh;
+    width: 100vw;
+  }
+
+  #floating-textbox {
+    position: sticky;
+    display: inline-block;
+    padding: 1rem;
+}
+  
+header {
+    position: absolute;
+    top: 5svh;
+}
+
+  #body {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    width: 98svw;
+    height: 160svh;
+  }
+  
+.paragraph {
+  position: absolute;
+  top: 10svh;
+}
+
+  p {
+    width: 10svw;
+    margin-bottom: 1rem;
+  }
+  
+a {
+  width: 10svw;
+  margin-bottom: 1rem;
+}
+
+  ul {
+    list-style: none;
+  }
+
+img {
+  position: absolute;
+  top: 10svh;
+  z-index: 0;
+  opacity: 0.0;
+  width: 15svw;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 10px 10px 40px;
+  transition: opacity 0.7s ease-in-out;
+}
+
+img:hover {
+  opacity: 100;
+  transition: 0.7s ease-in-out;
+  z-index: 2;
+}
+
+button {
+  position: sticky;
+  top: 35svh;
+  background-color: black;
+  color: white;
+  border: 0;
+}
+
+button:hover {
+  cursor: cell;
+}
+
+button:active ~ img {
+  opacity: 100;
+  transition: opacity 0.7s ease-in-out;
+  z-index: 2;
+}
+
+.image {
+  display: none;
+}
+
+.name {
+  padding: 1rem;
+  background-color: black;
+  color: white;
+}
+
+a:hover {
+  cursor:-moz-grabbing;
+}
+
+#header {
+  font-size: 4rem;
+  font-weight: 600;
+  color: black;
+  position: absolute;
+  left: 15svw;
+  top: 5svh;
+  width: 50svw;
+}
+
+#exercise {
+  font-size: .75rem;
+  font-weight: 100;
+  position: absolute;
+  left: 15svw;
+  top: 13svh;
+  width: 25svw;
+}
+
+#main {
+  font-size: 1rem;
+  font-weight: 600;
+  color: black;
+  position: absolute;
+  top: 18svh;
+  left: 15svw;
+  width: 40svw;
+}
+
+/* Images */
+#bmimg {
+  position: absolute;
+    top: 35svh;
+    left: 26svw;
+}
+
+#jdimg {
+  position: absolute;
+  top: 50svh;
+  left: 44svw;
+}
+
+#mlimg {
+  position: absolute;
+  top: 30svh;
+  left: 40svw;
+}
+
+#llimg {
+  position: absolute;
+  top: 33svh;
+  left: 55svw;
+}
+
+#dbimg {
+  position: absolute;
+  top: 20svh;
+  left: 60svw;
+}
+
+#mjimg {
+  position: absolute;
+  top: 15svh;
+  left: 80svw;
+}
+
+#ogimg {
+  position: absolute;
+  top: 43svh;
+  left: 70svw;
+}
+
+#dsrimg {
+  position: absolute;
+  top: 30svh;
+  left: 75svw;
+}
+
+#arcimg {
+  position: absolute;
+  top: 55svh;
+  left: 65svw;
+}
+
+#aeimg {
+  position: absolute;
+  top: 65svh;
+  left: 45svw;
+}
+
+#meimg {
+  position: absolute;
+  top: 75svh;
+  left: 37svw;
+}
+
+#rteimg {
+  position: absolute;
+  top: 60svh;
+  left: 20svw;
+}
+
+#akpimg {
+  position: absolute;
+  top: 70svh;
+  left: 15svw;
+}
+
+#iiimg {
+  position: absolute;
+  top: 85svh;
+  left: 22svw;
+}
+
+#gbimg {
+  position: absolute;
+  top: 95svh;
+  left: 39svw;
+}
+
+#shimg {
+  position: absolute;
+  top: 80svh;
+  left: 55svw;
+}
+
+#neimg {
+  position: absolute;
+  top: 92svh;
+  left: 72svw;
+}
+
+#agimg {
+  position: absolute;
+  top: 102svh;
+  left: 83svw;
+}
+
+#iagimg {
+  position: absolute;
+  top: 112svh;
+  left: 53svw;
+}
+
+#vimg {
+  position: absolute;
+  top: 108svh;
+  left: 37svw;
+}
+
+#thimg {
+  position: absolute;
+  top: 117svh;
+  left: 23svw;
+}
+
+#kimg {
+  position: absolute;
+  top: 119svh;
+  left: 79svw;
+}
+
+#lzimg {
+  position: absolute;
+  top: 127svh;
+  left: 69svw;
+}
+
+#lzfimg {
+  position: absolute;
+  top: 131svh;
+  left: 47svw;
+}
+
+#sthimg {
+  position: absolute;
+  top: 137svh;
+  left: 29svw;
+}
+
+/* Names/Connections IDs */
+  #bm {
+    position: absolute;
+    top: 35svh;
+    left: 26svw;
+  }
+
+#jd {
+  position: absolute;
+  top: 50svh;
+  left: 44svw;
+}
+
+#ml {
+  position: absolute;
+  top: 30svh;
+  left: 40svw;
+}
+
+#ll {
+  position: absolute;
+  top: 33svh;
+  left: 55svw;
+}
+
+#db {
+  position: absolute;
+  top: 20svh;
+  left: 60svw;
+}
+
+#og {
+  position: absolute;
+  top: 43svh;
+  left: 70svw;
+}
+
+#mj {
+  position: absolute;
+  top: 15svh;
+  left: 80svw;
+}
+
+#dsr {
+  position: absolute;
+  top: 30svh;
+  left: 75svw;
+}
+
+#arc {
+  position: absolute;
+  top: 55svh;
+  left: 65svw;
+}
+
+#ae {
+  position: absolute;
+  top: 65svh;
+  left: 45svw;
+}
+
+#me {
+  position: absolute;
+  top: 75svh;
+  left: 37svw;
+}
+
+#rte {
+  position: absolute;
+  top: 60svh;
+  left: 20svw;
+}
+
+#akp {
+  position: absolute;
+  top: 70svh;
+  left: 15svw;
+}
+
+#ii {
+  position: absolute;
+  top: 85svh;
+  left: 22svw;
+}
+
+#sh {
+  position: absolute;
+  top: 80svh;
+  left: 55svw;
+}
+
+#gb {
+  position: absolute;
+  top: 95svh;
+  left: 39svw;
+}
+
+#ne {
+  position: absolute;
+  top: 92svh;
+  left: 72svw;
+}
+
+#ag {
+  position: absolute;
+  top: 102svh;
+  left: 83svw;
+}
+
+#iag {
+  position: absolute;
+  top: 112svh;
+  left: 53svw;
+}
+
+#v {
+  position: absolute;
+  top: 108svh;
+  left: 37svw;
+}
+
+#th {
+  position: absolute;
+  top: 117svh;
+  left: 23svw;
+}
+
+#k {
+  position: absolute;
+  top: 119svh;
+  left: 79svw;
+}
+
+#lz {
+  position: absolute;
+  top: 127svh;
+  left: 69svw;
+}
+
+#lzf {
+  position: absolute;
+  top: 131svh;
+  left: 47svw;
+}
+
+#sth {
+  position: absolute;
+  top: 137svh;
+  left: 29svw;
+}
+
+#myCanvas {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 150vh;
+  display: block;
+}
+
+  .index {
+  position: absolute;
+  top: 160svh;
+  left: 90svw;
+    font-size: 1rem;
+  }
+  
+  .index h1 {
+    font-size: 1rem;
+  }
+  
+  .footer {
+    position: absolute;
+  top:155svh;
+  }
+  
+  @media only screen and (max-device-width: 750px) {
+          html, body {
+            height: 60svh;
+            width: 50svw;
+          }
+  
+          p {
+            width: 75%;
+          }
+  
+          nav {
+            width: 75%;
+          }
+          
+          canvas {
+            width: 85%;
+            height: 50%;
+            position: absolute;
+            top: 30svh;
+          }
+
+          .index {
+            position: absolute;
+            top: 84svh;
+            left: 70svw;
+          }
+  
+          .footer {
+            position: absolute;
+            top: 80svh;
+          }
+  }

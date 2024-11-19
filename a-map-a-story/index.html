@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>A Map, A Story.</title>
+</head>
+<body>
+    <div id="floating-textbox">
+        <p id="mouse-position"></p>
+    </div>
+    <div id="body">
+    <header>
+        <h1><a href=".." target="_blank">g.</a></h1>
+    </header>
+        <div class="paragraph">
+          <!--End Paragraph-->
+        
+          <!--Begin Nav Bar-->
+          <ul>
+            <li><a href="../the-living-gallery" target="_blank">The Living Gallery</a></li>
+            <li><a href="../warning-page" target="_blank">Ouroboros</a></li>
+            <li><a href="../mother" target="_blank">Mother</a></li>
+            <li><a href="../ps8" target="_blank">PS8, or ITD</a></li>
+            <li><a href="../interview" target="_blank">Interview</a></li>
+            <li><a href="../take-a-chance/" target="_blank">Take a Chance</a></li>
+            <li><a href="." target="_self">A Map, A Story</a></li>
+            <li><a href="Entry8" target="_blank">entry8</a></li>
+            <li><a href="Entry9" target="_blank">entry9</a></li>
+          </ul>
+          <!--End Nav Bar-->
+        </div>
+
+        <button type="button">Reveal the tangled web.</button>
+
+        <p id="header">A Map, A Story.</p>
+        <p id="exercise">An exercise in free-association.</p>
+
+        <p id="main">How close, or far, are we away from the evil that we resist? From the evil that feels so far removed.
+          A Map, A Story is meant to explore the space of connection and how free association allows for the ability to construct
+          a map that would otherwise not exist, forming connections that are as fantastical as they are real.
+        </p>
+
+        <canvas id="myCanvas"></canvas>
+
+        
+
+        <img id="bmimg" src="../imgs/blossom.png">
+        <img id="jdimg" src="../imgs/jame.jpg">
+        <img id="mlimg" src="../imgs/may.png">
+        <img id="llimg" src="../imgs/laura.png">
+        <img id="dbimg" src="../imgs/dylan.png">
+        <img id="mjimg" src="../imgs/mira.jpg">
+        <img id="ogimg" src="../imgs/100gecs.png">
+        <img id="dsrimg" src="../imgs/dogshow.jpg">
+        <img id="arcimg" src="../imgs/atlantic.png">
+        <img id="aeimg" src="../imgs/ahmet.jpg">
+        <img id="meimg" src="../imgs/mica.png">
+        <img id="rteimg" src="../imgs/rte.jpg">
+        <img id="akpimg" src="../imgs/akp.jpg">
+        <img id="iiimg" src="../imgs/invasion.jpg">
+        <img id="gbimg" src="../imgs/george.jpeg">
+        <img id="shimg" src="../imgs/saddam.png">
+        <img id="neimg" src="../imgs/911.jpg">
+        <img id="agimg" src="../imgs/abu.jpg">
+        <img id="iagimg" src="../imgs/incense.png">
+        <img id="vimg" src="../imgs/virgins.jpg">
+        <img id="thimg" src="../imgs/tim.jpg">
+        <img id="kimg" src="../imgs/kranky.png">
+        <img id="lzimg" src="../imgs/led.jpg">
+        <img id="lzfimg" src="../imgs/iv.jpg">
+        <img id="sthimg" src="../imgs/stairway.png">
+
+
+
+        <a href="https://www.instagram.com/bathinginbasalt" target="_blank" class="name" id="bm">Blossom Marquez</a>
+        <a href="https://inbio.bandcamp.com/track/eviscera" target="_blank" class="name" id="jd">Jame Doa</a>
+        <a href="https://www.instagram.com/nyxfears/" target="_blank" class="name" id="ml">May Leitz</a>
+        <a href="https://www.instagram.com/xxendless_slaughterxx/" target="_blank" class="name" id="ll">Laura Les</a>
+        <a href="https://www.instagram.com/dylanbrady/" target="_blank" class="name" id="db">Dylan Brady</a>
+        <a href="https://open.spotify.com/artist/6PfSUFtkMVoDkx4MQkzOi3?si=sQu1vk_ZSPOyEgwWgMQn1Q`" target="_blank" class="name" id="og">100 gecs</a>
+        <a href="https://www.instagram.com/mira__joyce/" target="_blank" class="name" id="mj">Mira Joyce</a>
+        <a href="https://www.instagram.com/dogshowrecords/" target="_blank" class="name" id="dsr">Dog Show Records</a>
+        <a href="https://www.atlanticrecords.com/" target="_blank" class="name" id="arc">Atlantic Recording Corporation</a>
+        <a href="https://en.wikipedia.org/wiki/Ahmet_Ertegun" target="_blank" class="name" id="ae">Ahmet Ertegun</a>
+        <a href="https://en.wikipedia.org/wiki/Mica_Ertegun" target="_blank" class="name" id="me">Mica Ertegun</a>
+        <a href="https://en.wikipedia.org/wiki/Recep_Tayyip_Erdo%C4%9Fan" target="_blank" class="name" id="rte">Recep Tayyip Erdogan</a>
+        <a href="https://en.wikipedia.org/wiki/Justice_and_Development_Party_(Turkey)" target="_blank" class="name" id="akp">AKP</a>
+        <a href="https://en.wikipedia.org/wiki/2003_invasion_of_Iraq" target="_blank" class="name" id="ii">2003 Invasion of Iraq</a>
+        <a href="https://en.wikipedia.org/wiki/Saddam_Hussein" target="_blank" class="name" id="sh">Saddam Hussein</a>
+        <a href="https://en.wikipedia.org/wiki/George_W._Bush" target="_blank" class="name" id="gb">George Bush</a>
+        <a href="https://en.wikipedia.org/wiki/September_11_attacks" target="_blank" class="name" id="ne">9/11</a>
+        <a href="https://en.wikipedia.org/wiki/Abu_Ghraib_torture_and_prisoner_abuse" target="_blank" class="name" id="ag">Abu Ghraib</a>
+        <a href="https://open.spotify.com/track/00xiSEdT4dYwcAukkMVl3t?si=f1912428a8404cfa" target="_blank" class="name" id="iag">Incense at Abu Ghraib</a>
+        <a href="https://open.spotify.com/album/3GzIvKYXNOBViT8TveArjx?si=j3pcckKjTmCl0oF3xUJ71Q" target="_blank" class="name" id="v">Virgins</a>
+        <a href="https://open.spotify.com/artist/1qiwaJwjKod5WhcYZ76O1B?si=i8v2HDmVRY-yQlIL-mQehg" target="_blank" class="name" id="th">Tim Hecker</a>
+        <a href="https://kranky.net/" target="_blank" class="name" id="k">Kranky</a>
+        <a href="https://open.spotify.com/artist/36QJpDe2go2KgaRleHCDTp?si=8fjJa0zuTgmGsCECDW5aJQ" target="_blank" class="name" id="lz">Led Zeppelin</a>
+        <a href="https://open.spotify.com/album/44Ig8dzqOkvkGDzaUof9lK?si=H5U3XuZpTUe4xeCjeXwxVg" target="_blank" class="name" id="lzf">Led Zeppelin IV</a>
+        <a href="https://open.spotify.com/track/5CQ30WqJwcep0pYcV4AMNc?si=300266c75e49440c" target="_blank" class="name" id="sth">Stairway to Heaven</a>
+
+
+
+    <div class="index">
+        <a href="../index/index.html" target="_blank"><h1>grottesca.index</h1></a>
+      </div>
+      
+      <!--Begin Footer-->
+      <div class="footer">
+        <a href="https://www.studioapriori.xyz" target="_blank">studioapriori</a>
+        <br>
+        <br>
+        <p class="bottom">Site Design by Blossom Marquez</p>
+      </div>
+</div>
+    <script src="../index/JS and JSON/mouse-follow.js"></script>
+    <script src="../index/JS and JSON/mouse-log.js"></script>
+    <script src="resize.js"></script>
+</body>
