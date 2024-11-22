@@ -67,13 +67,20 @@ img {
 
 @media only screen and (min-device-width: 769px) {
     img {
+        margin: 1rem;
+        opacity: 0.75;
     border-radius: 10px;
     box-shadow: 10px 10px 40px;
+    transition: opacity 0.5s linear;
+    transform: scale(1);
+    transition: transform 0.5s linear;
     }
 
     img:hover {
+        opacity: 1.0;
         transform: scale(1.1) translateX(10%); /* Enlarges on hover */
-        transition: transform 0.3s ease; /* Smooth transition over 0.3 seconds with ease-in-out easing */
+        transition: opacity 0.5s ease-in-out;
+        transition: transform 0.5s ease-in-out; /* Smooth transition over 0.3 seconds with ease-in-out easing */
     }
 }
 

@@ -41,6 +41,12 @@
             "header": "Take a Chance.",
             "link": "https://blossommarquez.github.io/harmonic-collection/take-a-chance",
             "img": "./images/take.png"
+        },
+        {
+            "comment": "This is the seventh div",
+            "header": "A Map, A Story",
+            "link": "https://blossommarquez.github.io/harmonic-collection/a-map-a-story",
+            "img": "./images/amap.png"
         }
     ]
 }
