@@ -4,6 +4,8 @@ for (let i = 1; i <= 40; i++) {
   imagePaths.push(`./imgs/${i}.jpg`);
 }
 
+console.log(imagePaths)
+
 
 function getRandomImage() {
   const randomIndex = Math.floor(Math.random() * imagePaths.length);
@@ -29,4 +31,4 @@ function updateImage() {
   imageContainer.appendChild(newImage);
 }
 
-setInterval(updateImage, 500);
+setInterval(updateImage, 1000);

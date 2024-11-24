@@ -17,6 +17,13 @@ body {
   margin-top: 0rem;
 }
 
+
+ul {
+  display: inline-block;
+  position: relative;
+  font-size: .9rem;
+  list-style: none;
+}
 /*
 #BgVideo {
   object-fit: cover;
@@ -40,12 +47,13 @@ body {
   margin-top: 3.6rem;
   margin-right: 2rem;
   margin-bottom: 1rem;
-
+position: relative;
 }
 
 h1 {
   margin: 0;
   margin-bottom: .25rem;
+  position: relative;
 }
 
 button {

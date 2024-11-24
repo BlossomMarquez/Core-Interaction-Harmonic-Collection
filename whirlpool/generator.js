@@ -4,7 +4,7 @@ document.getElementById("string-one").textContent = generateStringOne();
 
 setInterval(function() {
 document.getElementById("string-one").textContent = generateStringOne();
-}, 5000);
+}, 1000);
 
 function generateStringOne() {
     var action_states = [

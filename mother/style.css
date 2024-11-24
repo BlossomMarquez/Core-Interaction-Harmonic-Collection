@@ -17,6 +17,15 @@ body {
     font-family: "IBMPlexMono"
 }
 
+.index {
+position: relative;
+    font-size: .5rem;
+  }
+
+ul {
+  list-style: none;
+}
+
 body:hover {
   color: #3f42e6;
   background-color: #f987c2;
