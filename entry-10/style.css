@@ -15,8 +15,8 @@
     background-color: #efefef;
     color: black;
     display: inline-block;
-    height: 99svh;
-    width: 80svw;
+    height: 95svh;
+    width: 99svw;
   }
   
   pre {
@@ -42,6 +42,19 @@
     font-size: 3rem;
   }
   
+  #string-one {
+    position: absolute;
+    left: 25svw;
+    width: 50svw;
+  }
+
+  #counter {
+    position: absolute;
+    left: 25svw;
+    top: 15svh;
+    width: 10svw;
+  }
+
   p {
     width: 10svw;
     margin-bottom: 1rem;
@@ -51,9 +64,23 @@
     list-style: none;
   }
   
+  #container {
+    position: absolute;
+    left: 25svw;
+    top: 15svh;
+    width: 50svw;
+    height: 65svh;
+  }
+
+  #container img {
+    position: absolute;
+    width: 35svw;
+    height: auto;
+  }
+
   .index {
   position: absolute;
-  top: 175svh;
+  top: 90svh;
   left: 88svw;
     font-size: 1rem;
   }
@@ -64,7 +91,7 @@
   
   .footer {
     position: absolute;
-  top: 169svh;
+  top: 85svh;
   }
   
   @media only screen and (max-device-width: 750px) {
