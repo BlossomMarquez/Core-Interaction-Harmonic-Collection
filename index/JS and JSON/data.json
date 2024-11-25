@@ -47,6 +47,12 @@
             "header": "A Map, A Story",
             "link": "https://blossommarquez.github.io/harmonic-collection/a-map-a-story",
             "img": "./images/amap.png"
+        },
+        {
+            "comment": "This is the seventh div",
+            "header": "Whirlpool",
+            "link": "https://blossommarquez.github.io/harmonic-collection/whirlpool",
+            "img": "./images/whirlpool.png"
         }
     ]
 }

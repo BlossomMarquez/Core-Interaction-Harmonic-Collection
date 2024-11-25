@@ -13,6 +13,8 @@ img:hover {
   cursor: cell;
 }
 
+
+
 .btn:focus, .btn:active, button:focus, button:active {
     outline: none !important;
     box-shadow: none !important;
@@ -140,7 +142,7 @@ img:hover {
     '. . cont4 cont4 cont4 cont4'
     '. . para3 para3 para3 para3'
     '. . gallery gallery gallery gallery'
-    '. . . . foot foot';
+    '. . index . foot foot';
 }
 
 .head {
@@ -215,6 +217,13 @@ img:hover {
   background-color:white;
   font-size: .85rem;
   font-family: 'SuisseRegular';
+}
+
+.index {
+  grid-area: index;
+  font-size: .5rem;
+  font-family: 'SuisseRegular';
+  padding: 1rem;
 }
 
 .footer {
